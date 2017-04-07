@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 6 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Noon">
+              <span class="suite-name border-failed">Noon</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Noon">
+                    <span>testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Noon">
+                    <span class="test-stats">17 tests</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Noon">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Noon">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Noon">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Noon">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Noon">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">17 methods, 6 failed,   11 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Noon" class="hide-methods failed suite-Noon"> (hide)</a> <!-- hide-methods failed suite-Noon -->
+                      <a href="#" panel-name="suite-Noon" class="show-methods failed suite-Noon"> (show)</a> <!-- show-methods failed suite-Noon -->
+                    </span>
+                    <div class="method-list-content failed suite-Noon">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Noon" title="com.noon.iosapp.AddCreditCardCheckoutTest" hash-for-method="AddCreditCardCheckout">AddCreditCardCheckout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Noon" title="com.noon.iosapp.PayWithCreditCardTest" hash-for-method="AddCreditCardCheckout">AddCreditCardCheckout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Noon" title="com.noon.iosapp.AddAddressBookTest" hash-for-method="addAddressBook">addAddressBook</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Noon" title="com.noon.iosapp.AddAddressCheckoutTest" hash-for-method="addToCart">addToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Noon" title="com.noon.iosapp.PayWithCODTest" hash-for-method="payWithCODCard">payWithCODCard</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Noon" title="com.noon.iosapp.RegisterWithEmailTest" hash-for-method="registerWithEmail">registerWithEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Noon -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Noon" class="hide-methods passed suite-Noon"> (hide)</a> <!-- hide-methods passed suite-Noon -->
+                      <a href="#" panel-name="suite-Noon" class="show-methods passed suite-Noon"> (show)</a> <!-- show-methods passed suite-Noon -->
+                    </span>
+                    <div class="method-list-content passed suite-Noon">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Noon" title="com.noon.iosapp.SplashScreenTest" hash-for-method="SplashScreen">SplashScreen</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Noon" title="com.noon.iosapp.AddCreditCardWalletTest" hash-for-method="addCreditCardWallet">addCreditCardWallet</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Noon" title="com.noon.iosapp.AddToCartTest" hash-for-method="addToCart">addToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Noon" title="com.noon.iosapp.BuyNowTest" hash-for-method="buyNowItems">buyNowItems</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Noon" title="com.noon.iosapp.EditCartTest" hash-for-method="editCartItems">editCartItems</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Noon" title="com.noon.iosapp.LoginByEmailTest" hash-for-method="loginByEmail">loginByEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Noon" title="com.noon.iosapp.LoginByPhoneTest" hash-for-method="loginByPhone">loginByPhone</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Noon" title="com.noon.iosapp.LocalizationTest" hash-for-method="prodcutDetails">prodcutDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Noon" title="com.noon.iosapp.ProductDetailsTest" hash-for-method="prodcutDetails">prodcutDetails</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Noon" title="com.noon.iosapp.SearchTest" hash-for-method="searchItems">searchItems</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Noon" title="com.noon.iosapp.SideBarLinksTest" hash-for-method="sideBarLinks">sideBarLinks</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Noon -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Noon" class="panel Noon">
+          <div class="suite-Noon-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.noon.iosapp.PayWithCreditCardTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddCreditCardCheckout">
+                  </a> <!-- AddCreditCardCheckout -->
+                  <span class="method-name">AddCreditCardCheckout</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.40 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
+System info: host: &apos;kartik.local&apos;, ip: &apos;169.254.95.48&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.4&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities [{app=/Users/kartikbhatt/test-team/ios/POM_Noon/ipa/FastFish.ipa, networkConnectionEnabled=false, appiumVersion=1.6, databaseEnabled=false, deviceName=iPhone 7, platform=MAC, pressKey=true, platformVersion=10.3, webStorageEnabled=false, locationContextEnabled=false, automationName=XCUITest, browserName=, takesScreenshot=true, javascriptEnabled=true, platformName=iOS, udid=B7C3E4D4-C3EA-4DB0-A808-2ECEB73D8425}]
+Session ID: 87b2bc93-4ef0-45b7-9d69-1f20f8c5f797
+*** Element info: {Using=xpath, value=//XCUIElementTypeStaticText[@name=&apos;Sign in with&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:51)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:67)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:145)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElementByXPath(IOSDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:63)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at com.noon.iosapp.pages.AddAddressPage.signinTab(AddAddressPage.java:95)
+	at com.noon.iosapp.PayWithCreditCardTest.AddCreditCardCheckout(PayWithCreditCardTest.java:64)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Noon-class-failed -->
+          <div class="suite-Noon-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.noon.iosapp.AddAddressBookTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addAddressBook">
+                  </a> <!-- addAddressBook -->
+                  <span class="method-name">addAddressBook</span>
+                  <div class="stack-trace">java.lang.NoClassDefFoundError: com/fasterxml/jackson/databind/JavaType
+	at services.AddressService.deleteAllAddresses(AddressService.java:27)
+	at com.noon.iosapp.AddAddressBookTest.addAddressBook(AddAddressBookTest.java:67)
+Caused by: java.lang.ClassNotFoundException: com.fasterxml.jackson.databind.JavaType
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 25 more
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Noon-class-failed -->
+          <div class="suite-Noon-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.noon.iosapp.AddAddressCheckoutTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addToCart">
+                  </a> <!-- addToCart -->
+                  <span class="method-name">addToCart</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.29 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
+System info: host: &apos;kartik.local&apos;, ip: &apos;169.254.95.48&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.4&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities [{app=/Users/kartikbhatt/test-team/ios/POM_Noon/ipa/FastFish.ipa, networkConnectionEnabled=false, appiumVersion=1.6, databaseEnabled=false, deviceName=iPhone 7, platform=MAC, pressKey=true, platformVersion=10.3, webStorageEnabled=false, locationContextEnabled=false, automationName=XCUITest, browserName=, takesScreenshot=true, javascriptEnabled=true, platformName=iOS, udid=B7C3E4D4-C3EA-4DB0-A808-2ECEB73D8425}]
+Session ID: 96d9c551-3045-447c-850d-bc6e77f93d79
+*** Element info: {Using=xpath, value=//XCUIElementTypeStaticText[@name=&apos;Sign in with&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:51)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:67)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:145)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElementByXPath(IOSDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:63)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at com.noon.iosapp.pages.AddAddressPage.signinTab(AddAddressPage.java:95)
+	at com.noon.iosapp.AddAddressCheckoutTest.addToCart(AddAddressCheckoutTest.java:57)
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Noon-class-failed -->
+          <div class="suite-Noon-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.noon.iosapp.PayWithCODTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="payWithCODCard">
+                  </a> <!-- payWithCODCard -->
+                  <span class="method-name">payWithCODCard</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Timed out after 10 seconds waiting for visibility of element located by By.xpath: //XCUIElementTypeCell[2]/XCUIElementTypeButton[1]
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
+System info: host: &apos;kartik.local&apos;, ip: &apos;169.254.95.48&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.4&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities [{app=/Users/kartikbhatt/test-team/ios/POM_Noon/ipa/FastFish.ipa, networkConnectionEnabled=false, appiumVersion=1.6, databaseEnabled=false, deviceName=iPhone 7, platform=MAC, pressKey=true, platformVersion=10.3, webStorageEnabled=false, locationContextEnabled=false, automationName=XCUITest, browserName=, takesScreenshot=true, javascriptEnabled=true, platformName=iOS, udid=B7C3E4D4-C3EA-4DB0-A808-2ECEB73D8425}]
+Session ID: c65e42ff-ce1f-4678-8797-134713134fba
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
+	at com.noon.iosapp.pages.AddToCartPage.addToCart(AddToCartPage.java:91)
+	at com.noon.iosapp.PayWithCODTest.payWithCODCard(PayWithCODTest.java:57)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.26 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
+System info: host: &apos;kartik.local&apos;, ip: &apos;169.254.95.48&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.4&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities [{app=/Users/kartikbhatt/test-team/ios/POM_Noon/ipa/FastFish.ipa, networkConnectionEnabled=false, appiumVersion=1.6, databaseEnabled=false, deviceName=iPhone 7, platform=MAC, pressKey=true, platformVersion=10.3, webStorageEnabled=false, locationContextEnabled=false, automationName=XCUITest, browserName=, takesScreenshot=true, javascriptEnabled=true, platformName=iOS, udid=B7C3E4D4-C3EA-4DB0-A808-2ECEB73D8425}]
+Session ID: c65e42ff-ce1f-4678-8797-134713134fba
+*** Element info: {Using=xpath, value=//XCUIElementTypeCell[2]/XCUIElementTypeButton[1]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:51)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:67)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:145)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElementByXPath(IOSDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:63)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:911)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$0(ExpectedConditions.java:909)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+	... 25 more
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Noon-class-failed -->
+          <div class="suite-Noon-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.noon.iosapp.RegisterWithEmailTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerWithEmail">
+                  </a> <!-- registerWithEmail -->
+                  <span class="method-name">registerWithEmail</span>
+                  <div class="stack-trace">java.lang.NoClassDefFoundError: org/slf4j/LoggerFactory
+	at services.OTPExtractionService.&lt;clinit&gt;(OTPExtractionService.java:22)
+	at com.noon.iosapp.pages.RegisterWithEmailPage.registerWithEmail(RegisterWithEmailPage.java:126)
+	at com.noon.iosapp.RegisterWithEmailTest.registerWithEmail(RegisterWithEmailTest.java:28)
+Caused by: java.lang.ClassNotFoundException: org.slf4j.LoggerFactory
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 26 more
+... Removed 23 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Noon-class-failed -->
+          <div class="suite-Noon-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.noon.iosapp.AddCreditCardCheckoutTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddCreditCardCheckout">
+                  </a> <!-- AddCreditCardCheckout -->
+                  <span class="method-name">AddCreditCardCheckout</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Timed out after 10 seconds waiting for visibility of element located by By.xpath: //XCUIElementTypeStaticText[@name=&apos;Add new address&apos;]
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
+System info: host: &apos;kartik.local&apos;, ip: &apos;169.254.95.48&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.4&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities [{app=/Users/kartikbhatt/test-team/ios/POM_Noon/ipa/FastFish.ipa, networkConnectionEnabled=false, appiumVersion=1.6, databaseEnabled=false, deviceName=iPhone 7, platform=MAC, pressKey=true, platformVersion=10.3, webStorageEnabled=false, locationContextEnabled=false, automationName=XCUITest, browserName=, takesScreenshot=true, javascriptEnabled=true, platformName=iOS, udid=B7C3E4D4-C3EA-4DB0-A808-2ECEB73D8425}]
+Session ID: d0f77f26-9ed2-47cb-8dae-5b279dedc0fe
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
+	at com.noon.iosapp.pages.AddAddressPage.weDeliverText(AddAddressPage.java:110)
+	at com.noon.iosapp.AddCreditCardCheckoutTest.AddCreditCardCheckout(AddCreditCardCheckoutTest.java:73)
+Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 1.28 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.52.0&apos;, revision: &apos;4c2593c&apos;, time: &apos;2016-02-11 19:06:42&apos;
+System info: host: &apos;kartik.local&apos;, ip: &apos;169.254.95.48&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.4&apos;, java.version: &apos;1.8.0_111&apos;
+Driver info: io.appium.java_client.ios.IOSDriver
+Capabilities [{app=/Users/kartikbhatt/test-team/ios/POM_Noon/ipa/FastFish.ipa, networkConnectionEnabled=false, appiumVersion=1.6, databaseEnabled=false, deviceName=iPhone 7, platform=MAC, pressKey=true, platformVersion=10.3, webStorageEnabled=false, locationContextEnabled=false, automationName=XCUITest, browserName=, takesScreenshot=true, javascriptEnabled=true, platformName=iOS, udid=B7C3E4D4-C3EA-4DB0-A808-2ECEB73D8425}]
+Session ID: d0f77f26-9ed2-47cb-8dae-5b279dedc0fe
+*** Element info: {Using=xpath, value=//XCUIElementTypeStaticText[@name=&apos;Add new address&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:51)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:67)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:145)
+	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElementByXPath(IOSDriver.java:1)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:63)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:911)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$0(ExpectedConditions.java:909)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+	... 25 more
+... Removed 27 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Noon-class-failed -->
+          <div class="suite-Noon-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.noon.iosapp.SideBarLinksTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="sideBarLinks">
+                  </a> <!-- sideBarLinks -->
+                  <span class="method-name">sideBarLinks</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Noon-class-passed -->
+          <div class="suite-Noon-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.noon.iosapp.AddToCartTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addToCart">
+                  </a> <!-- addToCart -->
+                  <span class="method-name">addToCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Noon-class-passed -->
+          <div class="suite-Noon-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.noon.iosapp.SplashScreenTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SplashScreen">
+                  </a> <!-- SplashScreen -->
+                  <span class="method-name">SplashScreen</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Noon-class-passed -->
+          <div class="suite-Noon-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.noon.iosapp.SearchTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchItems">
+                  </a> <!-- searchItems -->
+                  <span class="method-name">searchItems</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Noon-class-passed -->
+          <div class="suite-Noon-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.noon.iosapp.EditCartTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="editCartItems">
+                  </a> <!-- editCartItems -->
+                  <span class="method-name">editCartItems</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Noon-class-passed -->
+          <div class="suite-Noon-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.noon.iosapp.ProductDetailsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="prodcutDetails">
+                  </a> <!-- prodcutDetails -->
+                  <span class="method-name">prodcutDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Noon-class-passed -->
+          <div class="suite-Noon-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.noon.iosapp.LoginByEmailTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginByEmail">
+                  </a> <!-- loginByEmail -->
+                  <span class="method-name">loginByEmail</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Noon-class-passed -->
+          <div class="suite-Noon-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.noon.iosapp.AddCreditCardWalletTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addCreditCardWallet">
+                  </a> <!-- addCreditCardWallet -->
+                  <span class="method-name">addCreditCardWallet</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Noon-class-passed -->
+          <div class="suite-Noon-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.noon.iosapp.BuyNowTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="buyNowItems">
+                  </a> <!-- buyNowItems -->
+                  <span class="method-name">buyNowItems</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Noon-class-passed -->
+          <div class="suite-Noon-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.noon.iosapp.LocalizationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="prodcutDetails">
+                  </a> <!-- prodcutDetails -->
+                  <span class="method-name">prodcutDetails</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Noon-class-passed -->
+          <div class="suite-Noon-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.noon.iosapp.LoginByPhoneTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginByPhone">
+                  </a> <!-- loginByPhone -->
+                  <span class="method-name">loginByPhone</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Noon-class-passed -->
+        </div> <!-- panel Noon -->
+        <div panel-name="test-xml-Noon" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/kartikbhatt/test-team/ios/POM_Noon/src/test/resources/testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Noon&quot;&gt;
+  &lt;test name=&quot;Splash screen Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.noon.iosapp.SplashScreenTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Splash screen Test --&gt;
+  &lt;test name=&quot;Localization page Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.noon.iosapp.LocalizationTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Localization page Test --&gt;
+  &lt;test name=&quot;Side Bar Menu link Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.noon.iosapp.SideBarLinksTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Side Bar Menu link Test --&gt;
+  &lt;test name=&quot;Search Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.noon.iosapp.SearchTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Search Test --&gt;
+  &lt;test name=&quot;Product Details Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.noon.iosapp.ProductDetailsTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Product Details Test --&gt;
+  &lt;test name=&quot;Register email through OTP code Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.noon.iosapp.RegisterWithEmailTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Register email through OTP code Test --&gt;
+  &lt;test name=&quot;Login By Phone Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.noon.iosapp.LoginByPhoneTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Login By Phone Test --&gt;
+  &lt;test name=&quot;Login By Email Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.noon.iosapp.LoginByEmailTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Login By Email Test --&gt;
+  &lt;test name=&quot;Add to cart Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.noon.iosapp.AddToCartTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Add to cart Test --&gt;
+  &lt;test name=&quot;Buy now Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.noon.iosapp.BuyNowTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Buy now Test --&gt;
+  &lt;test name=&quot;Edit cart Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.noon.iosapp.EditCartTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Edit cart Test --&gt;
+  &lt;test name=&quot;Add new address from Address Book Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.noon.iosapp.AddAddressBookTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Add new address from Address Book Test --&gt;
+  &lt;test name=&quot;Add new address from checkout Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.noon.iosapp.AddAddressCheckoutTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Add new address from checkout Test --&gt;
+  &lt;test name=&quot;Add credit card through Wallet Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.noon.iosapp.AddCreditCardWalletTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Add credit card through Wallet Test --&gt;
+  &lt;test name=&quot;Add credit card through checkout Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.noon.iosapp.AddCreditCardCheckoutTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Add credit card through checkout Test --&gt;
+  &lt;test name=&quot;Checkout through COD Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.noon.iosapp.PayWithCODTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Checkout through COD Test --&gt;
+  &lt;test name=&quot;Pay with credit card  Test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.noon.iosapp.PayWithCreditCardTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Pay with credit card  Test --&gt;
+&lt;/suite&gt; &lt;!-- Noon --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Noon" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Noon</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Splash screen Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Localization page Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Side Bar Menu link Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Search Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Product Details Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Register email through OTP code Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Login By Phone Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Login By Email Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Add to cart Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Buy now Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Edit cart Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Add new address from Address Book Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Add new address from checkout Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Add credit card through Wallet Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Add credit card through checkout Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Checkout through COD Test (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Pay with credit card  Test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Noon" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Noon</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Noon" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Noon</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Noon');
+function tableData_Noon() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(17);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'loginByPhone')
+data.setCell(0, 2, 'com.noon.iosapp.LoginByPhoneTest')
+data.setCell(0, 3, 203729);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'addCreditCardWallet')
+data.setCell(1, 2, 'com.noon.iosapp.AddCreditCardWalletTest')
+data.setCell(1, 3, 148062);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'addAddressBook')
+data.setCell(2, 2, 'com.noon.iosapp.AddAddressBookTest')
+data.setCell(2, 3, 84712);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'AddCreditCardCheckout')
+data.setCell(3, 2, 'com.noon.iosapp.AddCreditCardCheckoutTest')
+data.setCell(3, 3, 76967);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'loginByEmail')
+data.setCell(4, 2, 'com.noon.iosapp.LoginByEmailTest')
+data.setCell(4, 3, 71067);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'registerWithEmail')
+data.setCell(5, 2, 'com.noon.iosapp.RegisterWithEmailTest')
+data.setCell(5, 3, 69662);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'prodcutDetails')
+data.setCell(6, 2, 'com.noon.iosapp.ProductDetailsTest')
+data.setCell(6, 3, 57496);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'payWithCODCard')
+data.setCell(7, 2, 'com.noon.iosapp.PayWithCODTest')
+data.setCell(7, 3, 55253);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'AddCreditCardCheckout')
+data.setCell(8, 2, 'com.noon.iosapp.PayWithCreditCardTest')
+data.setCell(8, 3, 50387);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'addToCart')
+data.setCell(9, 2, 'com.noon.iosapp.AddAddressCheckoutTest')
+data.setCell(9, 3, 49377);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'addToCart')
+data.setCell(10, 2, 'com.noon.iosapp.AddToCartTest')
+data.setCell(10, 3, 48492);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'buyNowItems')
+data.setCell(11, 2, 'com.noon.iosapp.BuyNowTest')
+data.setCell(11, 3, 46567);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'editCartItems')
+data.setCell(12, 2, 'com.noon.iosapp.EditCartTest')
+data.setCell(12, 3, 45608);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'sideBarLinks')
+data.setCell(13, 2, 'com.noon.iosapp.SideBarLinksTest')
+data.setCell(13, 3, 44451);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'searchItems')
+data.setCell(14, 2, 'com.noon.iosapp.SearchTest')
+data.setCell(14, 3, 37372);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'prodcutDetails')
+data.setCell(15, 2, 'com.noon.iosapp.LocalizationTest')
+data.setCell(15, 3, 29801);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'SplashScreen')
+data.setCell(16, 2, 'com.noon.iosapp.SplashScreenTest')
+data.setCell(16, 3, 23519);
+window.suiteTableData['Noon']= { tableData: data, tableDiv: 'times-div-Noon'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 19 minutes</span>
+              <div id="times-div-Noon">
+              </div> <!-- times-div-Noon -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Noon" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Noon</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Noon" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Noon" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.noon.iosapp.SplashScreenTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">SplashScreen</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">23520 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.noon.iosapp.LocalizationTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">prodcutDetails</span>
+                <span class="method-start">24189 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">53990 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.noon.iosapp.SideBarLinksTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">sideBarLinks</span>
+                <span class="method-start">54404 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">98855 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.noon.iosapp.SearchTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">searchItems</span>
+                <span class="method-start">99279 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">136651 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.noon.iosapp.ProductDetailsTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">prodcutDetails</span>
+                <span class="method-start">137082 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">194579 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.noon.iosapp.RegisterWithEmailTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">registerWithEmail</span>
+                <span class="method-start">195000 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">264663 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.noon.iosapp.LoginByPhoneTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">loginByPhone</span>
+                <span class="method-start">265075 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">468804 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.noon.iosapp.LoginByEmailTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">loginByEmail</span>
+                <span class="method-start">469523 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">540590 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.noon.iosapp.AddToCartTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">addToCart</span>
+                <span class="method-start">541060 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">589552 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.noon.iosapp.BuyNowTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">buyNowItems</span>
+                <span class="method-start">590011 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">636579 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.noon.iosapp.EditCartTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">editCartItems</span>
+                <span class="method-start">637024 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">682632 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.noon.iosapp.AddAddressBookTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">addAddressBook</span>
+                <span class="method-start">683091 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">767804 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.noon.iosapp.AddAddressCheckoutTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">addToCart</span>
+                <span class="method-start">768248 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">817625 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.noon.iosapp.AddCreditCardWalletTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">addCreditCardWallet</span>
+                <span class="method-start">818074 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">966136 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.noon.iosapp.AddCreditCardCheckoutTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">AddCreditCardCheckout</span>
+                <span class="method-start">966597 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">1043564 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.noon.iosapp.PayWithCODTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">payWithCODCard</span>
+                <span class="method-start">1044003 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">1099256 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.noon.iosapp.PayWithCreditCardTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">AddCreditCardCheckout</span>
+                <span class="method-start">1099710 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">1150097 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
