@@ -1,0 +1,6 @@
+*.class
+*.idea
+*.metadata
+*.RemoteSystemsTempFiles
+*.DS_Store
+
