@@ -42,7 +42,7 @@ public class SendMail
                 //This is for yahoo
 
                 sendMail("kartikeya_bhatt@yahoo.com",
-                		            "Kartik21",
+                		            "xxxxxxx",
                 		            "smtp.mail.yahoo.com",
                 		            "25",
                 		            "true",
