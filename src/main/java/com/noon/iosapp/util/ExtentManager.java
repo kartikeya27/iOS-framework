@@ -15,7 +15,7 @@ public class ExtentManager {
 		if (extent == null) {
 			Date d= new Date();
 			String fileName=d.toString().replace(":", "_").replace(" ", "_")+".html";
-			extent = new ExtentReports("/Users/kartikbhatt/test-team/ios/IOSReports/report.html"+fileName, true, DisplayOrder.NEWEST_FIRST);
+			extent = new ExtentReports("/Users/kartikbhatt/IOSReports/report.html"+fileName, true, DisplayOrder.NEWEST_FIRST);
 
 			// optional
 		//	extent.config().documentTitle("Automation Report")

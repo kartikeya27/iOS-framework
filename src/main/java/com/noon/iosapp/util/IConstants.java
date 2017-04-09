@@ -111,7 +111,7 @@ public interface IConstants {
 		String REGISTER_USER_PASSWORD="//XCUIElementTypeSecureTextField[@name='register_password_textfield']";
 		String REGISTER_BUTTON="//XCUIElementTypeButton[@name='register_continue_button']";
 		String VERIFICATION_EMAIL="//XCUIElementTypeStaticText[@name='Thanks, we just sent you a verification email']";
-		String DIGIT_TEXT="//XCUIElementTypeStaticText[@name='Enter the 4-digit code you received below']";
+		String DIGIT_TEXT="//XCUIElementTypeStaticText[@name='enter_sms_label']";
 		String RESEND_EMAIL="//XCUIElementTypeButton[@name='register_switchPhoneEmail_button']";
 		String OTP_CODE_1="//XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeTable[1]/XCUIElementTypeCell[2]/XCUIElementTypeTextField[1]";
 		String OTP_CODE_2="//XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeTable[1]/XCUIElementTypeCell[2]/XCUIElementTypeTextField[2]";
