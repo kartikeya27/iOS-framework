@@ -62,7 +62,7 @@ public class SendMail
                 String xsltReportPath=reportFolder+"Reports.zip";
                 Zip.zipDir(System.getProperty("user.dir")+"//XSLT_Reports", xsltReportPath);
                 SendMail.sendMail("kartikeya_bhatt@yahoo.com",
-    		            "Kartik21",
+    		            "xxxxxx",
     		            "smtp.mail.yahoo.com",
     		            "25",
     		            "true",
