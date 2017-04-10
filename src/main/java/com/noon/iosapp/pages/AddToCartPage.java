@@ -20,6 +20,8 @@ public class AddToCartPage extends BasePage {
 	public AddToCartPage(IOSDriver<IOSElement> iDriver, ExtentTest test) {
 		super(iDriver, test);
 	}
+
+	WebDriverWait wait;
 	
 	@FindBy(xpath=IConstants.SEARCH_BOX)
 	public IOSElement searchBox;
@@ -65,18 +67,27 @@ public class AddToCartPage extends BasePage {
 	
 	@FindBy(xpath=IConstants.BACK_BUTTON)
 	public IOSElement backButton;
+
+	@FindBy(xpath=IConstants.ADDTOCART)
+	public IOSElement addToCart;
+
+	@FindBy(xpath=IConstants.SEARCH_ITEM_LABEL)
+	public IOSElement searchItemLabel;
 	
 	public int InitialItemNumber = 0;
     public int FinalItemNumber = 0;
 
-
-
-	
 	public void addToCart() throws InterruptedException {
 		test.log(LogStatus.INFO, "Add Item in cart");
-		WebDriverWait wait = new WebDriverWait(iDriver, 10);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.SEARCH_ITEM_CART)));
-		searchItemCart.click();
+		wait = new WebDriverWait(iDriver, 10);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.SEARCH_ITEM_LABEL)));
+		searchItemLabel.click();
+		wait = new WebDriverWait(iDriver, 10);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.ADDTOCART)));
+		addToCart.click();
+		//WebDriverWait wait = new WebDriverWait(iDriver, 10);
+		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.SEARCH_ITEM_CART)));
+		//searchItemCart.click();
 		test.log(LogStatus.INFO, "Click on cart button");
 		wait = new WebDriverWait(iDriver, 10);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.CART_ITEM)));
@@ -100,7 +111,7 @@ public class AddToCartPage extends BasePage {
 	
 	public void addMultipleItems(String searchItem) 
 	{
-		WebDriverWait wait = new WebDriverWait(iDriver, 10);
+		wait = new WebDriverWait(iDriver, 10);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.SEARCH_BOX)));
 		TouchAction action2 = new TouchAction(iDriver);
         action2.tap(searchBox).perform();
@@ -129,7 +140,7 @@ public class AddToCartPage extends BasePage {
 	}
 	
 	public void increaseItem() {
-		WebDriverWait wait = new WebDriverWait(iDriver, 10);
+		wait = new WebDriverWait(iDriver, 10);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.PRODUCT_QUANTITY)));
         InitialItemNumber = Integer.parseInt(productQuantity.getText());
         wait = new WebDriverWait(iDriver, 10);
@@ -142,7 +153,7 @@ public class AddToCartPage extends BasePage {
 	}
 	
 	public void decreaseItem() {
-		WebDriverWait wait = new WebDriverWait(iDriver, 10);
+		wait = new WebDriverWait(iDriver, 10);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.PRODUCT_QUANTITY)));
         InitialItemNumber = Integer.parseInt(productQuantity.getText());
         wait = new WebDriverWait(iDriver, 10);
@@ -155,7 +166,7 @@ public class AddToCartPage extends BasePage {
 	}
 	
 	public void removeItem() {
-		WebDriverWait wait = new WebDriverWait(iDriver, 30);
+		wait = new WebDriverWait(iDriver, 30);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.ITEM_REMOVE)));
 		itemRemove.click();
 		wait = new WebDriverWait(iDriver, 30);

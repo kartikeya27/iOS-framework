@@ -27,12 +27,21 @@ public class BuyNowPage extends BasePage {
 	
 	@FindBy(xpath=IConstants.DELIVERY_ADDRESS_CELL)
 	public IOSElement deliveryAddressCell;
+
+	@FindBy(xpath=IConstants.SEARCH_ITEM_LABEL)
+	public IOSElement searchItemLable;
+
+	WebDriverWait wait;
 	
 	public void buyNowProduct() {
 		test.log(LogStatus.INFO, "Click on product details");
-		WebDriverWait wait = new WebDriverWait(iDriver, 10);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.SEARCH_TEXT_SELECT)));
-		searchTextSelect.click();
+		wait = new WebDriverWait(iDriver, 10);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.SEARCH_ITEM_LABEL)));
+		searchItemLable.click();
+		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstant
+		//WebDriverWait wait = new WebDriverWait(iDriver, 10);
+		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.SEARCH_TEXT_SELECT)));
+		//searchTextSelect.click();
 		test.log(LogStatus.INFO, "Buy product using buy now button");
 		wait = new WebDriverWait(iDriver, 10);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.BUYNOW_BUTTON)));

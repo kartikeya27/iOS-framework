@@ -1,5 +1,6 @@
 package com.noon.iosapp;
 
+import dtos.catalog.ProductByNinResponse;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 import com.noon.iosapp.base.BaseTest;
@@ -15,6 +16,7 @@ import com.relevantcodes.extentreports.LogStatus;
 
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import services.AddressService;
+import services.ProductService;
 
 public class AddCreditCardCheckoutTest extends BaseTest {
 	
@@ -55,7 +57,9 @@ String testName="AddCreditCardCheckoutTest";
 		
 		String userName = "noontesting2+12@gmail.com";
 		String password = "1200@Villa";
-		String searchItem = "Roja Perfume Roja Perfume";
+		ProductService productService = new ProductService();
+		ProductByNinResponse productByNinResponse = productService.getTestProduct();
+		String searchItem = productByNinResponse.getName();
 		String deliverAddress = "Emmaar Square Building #3";
 		String phoneNumber = "0566681264";
 		String cName = "Kartik";
@@ -72,7 +76,7 @@ String testName="AddCreditCardCheckoutTest";
 		addAddressPage.addNewAddressCheckout();
 		addAddressPage.weDeliverText();
 		addAddressPage.addNewAddress(deliverAddress);
-		addAddressPage.deliveryAddress(phoneNumber);
+		addAddressPage.deliveryAddressCredit(phoneNumber);
 		checkoutPage.addCreditCard();
 		checkoutPage.addCreditCardCheckout(cName,cNumber,cExpMonth, cExpYear);
 		checkoutPage.deleteCard();

@@ -169,7 +169,8 @@ public interface IConstants {
 		String SEARCH_BOX="//XCUIElementTypeSearchField[@name='What are you looking for today?']";
 		String SEARCH_TYPE="//XCUIElementTypeImage[1]";
 
-		String SEARCH_TEXT_SELECT="//XCUIElementTypeStaticText[@name='Roja Perfums Roja Perfums Scandal Perfum EDP Eau de Parfum']";
+		String SEARCH_TEXT_SELECT="/XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeTable[1]/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]";
+        String SEARCH_ITEM_LABEL="//XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeCollectionView[1]/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]";
 		String SEARCH_ITEM_PRICE="//XCUIElementTypeStaticText[@name='search_result_cell_price_label']";
 		String SEARCH_ITEM_CART="//XCUIElementTypeButton[@name='search_result_cart_button']";
 		
@@ -201,7 +202,7 @@ public interface IConstants {
 		String ITEM_DETAILS="//XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeTable[1]/XCUIElementTypeCell[3]";
 		//String ITEM_REMOVE="//XCUIElementTypeButton[@name='cart_cartCell_remove_button']";
 		//String ITEM_REMOVE="//XCUIElementTypeButton[3]";
-		String CROSS_BUTTON="//XCUIElementTypeButton[@name='cross']";
+		String CROSS_BUTTON="//XCUIElementTypeButton[@name='cross button']";
 		String BACK_BUTTON="//XCUIElementTypeButton[@name='back']";
 		String BACK1_BUTTON="//XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeNavigationBar[1]/XCUIElementTypeButton[1]";
 		//String BACK_BUTTON="//XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeNavigationBar[1]/XCUIElementTypeButton[1]";
@@ -213,11 +214,11 @@ public interface IConstants {
 		String VERIFY_ITEM1="//XCUIElementTypeCell[3]";
 		String VERIFY_ITEM2="//XCUIElementTypeCell[4]";
 		String REMOVE_ITEM2="//XCUIElementTypeCell[4]/XCUIElementTypeStaticText[1]";
-		String PRODUCT_QUANTITY="//XCUIElementTypeCell[3]/XCUIElementTypeStaticText[4]";
+		String PRODUCT_QUANTITY="//XCUIElementTypeCell[3]/XCUIElementTypeStaticText[3]";
 		String INCREASE_ITEM="//XCUIElementTypeButton[@name='cart_cartCell_increaseQuantity_button']";
 		String DECREASE_ITEM="//XCUIElementTypeButton[@name='cart_cartCell_decreaseQuantity_button']";
-		String ITEM_REMOVE="//XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeTable[1]/XCUIElementTypeCell[3]/XCUIElementTypeButton[2]";
-		
+		String ITEM_REMOVE="//XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeTable[1]/XCUIElementTypeCell[3]/XCUIElementTypeButton[1]";
+
 		//Elements for Add New Address page
 		String NO_ADDRESS_ADDED="//XCUIElementTypeStaticText[@name='No address added yet']";
 		String ADD_NEW_ADDRESS_TEXT="//XCUIElementTypeStaticText[@name='Add new address']";
@@ -251,6 +252,10 @@ public interface IConstants {
 		String DELIVERY_ADDRESS_NAME="//XCUIElementTypeStaticText[@name='Name']";
 		String DELIVERY_ADDRESS_PHONE="//XCUIElementTypeStaticText[@name='Phone']";
 		String DELIVERY_ADDRESS_PHONE_EDIT="//XCUIElementTypeTextField[@value='Mobile']";
+		String DELIVERY_ADDRESS_NAME_EDIT="//XCUIElementTypeTextField[@value='Name']";
+		String CLEAR_TEXT="//XCUIElementTypeButton[@name='Clear text']";
+		String DELIVERY_ADDRESS_NAME_CLICK="//XCUIElementTypeTextField[@value='noon']";
+
 		String DELIVERY_ADDRESS_SAVE="//XCUIElementTypeButton[@name='addAddress_form_done_button']";
 		String DEFAULT_ADDRESS_BACKBUTTON="//XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeNavigationBar[1]/XCUIElementTypeButton[1]";
 		String DELIVERY_ADDRESS_CONFORM="//XCUIElementTypeStaticText[@name='Home, Emaar Square Building #3']";
@@ -321,8 +326,31 @@ public interface IConstants {
 		String ALL_DONE="//XCUIElementTypeStaticText[@name='order_summary_notification_title']";
 		String COD_PLACE_ORDER="//XCUIElementTypeButton[@name='Place order']";
 		
-		
-		
+		//Element for product order conformation
+		String MABROOK_TEXT="//XCUIElementTypeStaticText[1]";
+	    String THANK_YOU_TEXT="//XCUIElementTypeStaticText[2]";
+	    String TOTAL_VALUE="//XCUIElementTypeStaticText[6]";
+	    String ORDER_SUBTOTAL="//XCUIElementTypeStaticText[7]";
+	    String PAY_ON_DELIVERY1="//XCUIElementTypeStaticText[8]";
+	    String SHIPPING_TOTAL1="//XCUIElementTypeStaticText[9]";
+    	String ADD_TO_CALENDER="//XCUIElementTypeButton[1]]";
+		String VIEW_ORDER_STATUS="//XCUIElementTypeButton[2]";
+		String SHIP_TO="//XCUIElementTypeCell[3]";
+		String SHIPMENT_ONE="//XCUIElementTypeCell[4]";
+	    String NEED_HELP="//XCUIElementTypeCell[5]";
+		String CHAT_WITH="//XCUIElementTypeCell[5]/XCUIElementTypeButton[1]";
+		String FOLLOW_US_ON_SOCIAL="//XCUIElementTypeCell[6]";
+		String DONE1="//XCUIElementTypeCell[7]";
+
+		//Element for all orders page
+		String ORDER_ID="//XCUIElementTypeApplication[1]/XCUIElementTypeWindow[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[2]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeOther[1]/XCUIElementTypeScrollView[1]/XCUIElementTypeOther[1]/XCUIElementTypeTable[1]/XCUIElementTypeCell[1]/XCUIElementTypeStaticText[1]";
+		String ORDER_EXPECTED_DATE="//XCUIElementTypeStaticText[6]";
+		String ORDER_DATE="//XCUIElementTypeStaticText[7]";
+		String ORDER_TOTAL_SHIPMENT="//XCUIElementTypeStaticText[8]";
+		String ORDER_TOTAL_ITEMS="//XCUIElementTypeStaticText[9]";
+		String ORDER_TOTAL_VALUE="//XCUIElementTypeStaticText[10]";
+
+
 		//Element for Shop by Category Fashion Page
 		String FASHION_LINK="//XCUIElementTypeStaticText[@name='Fashion']";
 		String FASHION_CELL1="//XCUIElementTypeCell[1]";

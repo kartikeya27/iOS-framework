@@ -85,7 +85,7 @@ public class AddAddressCheckoutPage extends BasePage {
 	
 	@FindBy(xpath=IConstants.HIDE_KEYBOARD1)
 	public IOSElement hideKeyboad1;
-	
+
 	@FindBy(xpath=IConstants.DELIVERY_ADDRESS_PHONE_EDIT)
 	public IOSElement deliveryAddressPhoneEdit;
 	
@@ -110,7 +110,7 @@ public class AddAddressCheckoutPage extends BasePage {
 	@FindBy(xpath=IConstants.CROSS_BUTTON)
 	public IOSElement crossButton;
 	
-	public void addNewAddress(String deliveryAddress, String phoneNumber) throws InterruptedException {
+	public void addNewAddress(String deliveryAddress, String name, String phoneNumber) throws InterruptedException {
 		test.log(LogStatus.INFO, "Add new address for product checkout");
 		test.log(LogStatus.INFO, "Add Item in cart");
 		WebDriverWait wait = new WebDriverWait(iDriver, 10);

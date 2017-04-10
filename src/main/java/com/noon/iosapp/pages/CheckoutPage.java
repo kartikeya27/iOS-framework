@@ -93,6 +93,9 @@ public class CheckoutPage extends BasePage {
 	
 	@FindBy(xpath=IConstants.SELECT_COD_OPTION)
 	public IOSElement selectCodOption;
+
+	@FindBy(xpath=IConstants.VIEW_ORDER_STATUS)
+	public IOSElement viewOrderStatus;
 	
 	@FindBy(xpath=IConstants.BACK_BUTTON)
 	public IOSElement backButton;
@@ -126,6 +129,9 @@ public class CheckoutPage extends BasePage {
 
 	@FindBy(xpath=IConstants.THREE_DAYS)
 	public IOSElement threeDays;
+
+	@FindBy(xpath=IConstants.PLACE_ORDER)
+	public IOSElement placeOrder;
 	
 	public void checkoutProduct()
 	{
@@ -366,21 +372,21 @@ public class CheckoutPage extends BasePage {
 		wait = new WebDriverWait(iDriver, 10);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.SHIPMENT_ONE_IMAGE)));
 		Assert.assertTrue(isElementPresent(IConstants.SHIPMENT_ONE_IMAGE), "Could not find shipment one element");
-		wait = new WebDriverWait(iDriver, 10);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.DELIVERY_OPTION)));
-		deliveryOption.click();
-		wait = new WebDriverWait(iDriver, 10);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.SAME_DAY)));
-		Assert.assertTrue(isElementPresent(IConstants.SAME_DAY), "Could not find same day delivery element");
-		wait = new WebDriverWait(iDriver, 10);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.NEXT_DAY)));
-		Assert.assertTrue(isElementPresent(IConstants.NEXT_DAY), "Could not find next day delivery element");
-		wait = new WebDriverWait(iDriver, 10);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.THREE_DAYS)));
-		Assert.assertTrue(isElementPresent(IConstants.THREE_DAYS), "Could not find three day delivery element");
-		wait = new WebDriverWait(iDriver, 10);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.THREE_DAYS)));
-		threeDays.click();
+		//wait = new WebDriverWait(iDriver, 10);
+		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.DELIVERY_OPTION)));
+		//deliveryOption.click();
+		//wait = new WebDriverWait(iDriver, 10);
+		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.SAME_DAY)));
+		//Assert.assertTrue(isElementPresent(IConstants.SAME_DAY), "Could not find same day delivery element");
+		//wait = new WebDriverWait(iDriver, 10);
+		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.NEXT_DAY)));
+		//Assert.assertTrue(isElementPresent(IConstants.NEXT_DAY), "Could not find next day delivery element");
+		//wait = new WebDriverWait(iDriver, 10);
+		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.THREE_DAYS)));
+		//Assert.assertTrue(isElementPresent(IConstants.THREE_DAYS), "Could not find three day delivery element");
+		//wait = new WebDriverWait(iDriver, 10);
+		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.THREE_DAYS)));
+		//threeDays.click();
 		wait = new WebDriverWait(iDriver, 10);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.ORDER_SUMMARY)));
 		Assert.assertTrue(isElementPresent(IConstants.ORDER_SUMMARY), "Could not find summary order");
@@ -420,28 +426,80 @@ public class CheckoutPage extends BasePage {
 		wait = new WebDriverWait(iDriver, 10);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.SELECT_DELIVERY_OPTION_TEXT)));
 		Assert.assertTrue(isElementPresent(IConstants.SELECT_DELIVERY_OPTION_TEXT), "Select delivery option text could not load");
-		wait = new WebDriverWait(iDriver, 10);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.SELECT_COD_OPTION)));
-		selectCodOption.click();
-		wait = new WebDriverWait(iDriver, 10);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.COD_SAME_DAY)));
-		Assert.assertTrue(isElementPresent(IConstants.COD_SAME_DAY), "Same day delivered element could not load");
-		wait = new WebDriverWait(iDriver, 10);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.COD_NEXT_DAY)));
-		Assert.assertTrue(isElementPresent(IConstants.COD_NEXT_DAY), "Next day delivered element could not load");
-		wait = new WebDriverWait(iDriver, 10);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.COD_STANDARD)));
-		Assert.assertTrue(isElementPresent(IConstants.COD_STANDARD), "Standard delivered element could not load");
-		selectCodOption.click();
-		wait = new WebDriverWait(iDriver, 10);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.SHIPPING_TOTAL_CELL)));
-		Assert.assertTrue(isElementPresent(IConstants.SHIPPING_TOTAL_CELL), "Shipping total cell element could not load");
+		//wait = new WebDriverWait(iDriver, 10);
+		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.SELECT_COD_OPTION)));
+		//selectCodOption.click();
+		//wait = new WebDriverWait(iDriver, 10);
+		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.COD_SAME_DAY)));
+		//Assert.assertTrue(isElementPresent(IConstants.COD_SAME_DAY), "Same day delivered element could not load");
+		//wait = new WebDriverWait(iDriver, 10);
+		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.COD_NEXT_DAY)));
+		//Assert.assertTrue(isElementPresent(IConstants.COD_NEXT_DAY), "Next day delivered element could not load");
+		//wait = new WebDriverWait(iDriver, 10);
+		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.COD_STANDARD)));
+		//Assert.assertTrue(isElementPresent(IConstants.COD_STANDARD), "Standard delivered element could not load");
+		//selectCodOption.click();
+		//wait = new WebDriverWait(iDriver, 10);
+		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.SHIPPING_TOTAL_CELL)));
+		//Assert.assertTrue(isElementPresent(IConstants.SHIPPING_TOTAL_CELL), "Shipping total cell element could not load");
 		wait = new WebDriverWait(iDriver, 10);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.ALL_DONE)));
 		Assert.assertTrue(isElementPresent(IConstants.ALL_DONE), "All done text could not load");
 		wait = new WebDriverWait(iDriver, 10);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.COD_PLACE_ORDER)));
 		Assert.assertTrue(isElementPresent(IConstants.COD_PLACE_ORDER), "Place order button could not load");
+	}
+
+	public void orderByCOD() {
+		test.log(LogStatus.INFO, "Click on cod place order");
+		placeOrder.click();
+
+		wait = new WebDriverWait(iDriver, 10);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.MABROOK_TEXT)));
+		Assert.assertTrue(isElementPresent(IConstants.MABROOK_TEXT), "Mabrook text did not load");
+		wait = new WebDriverWait(iDriver, 10);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.THANK_YOU_TEXT)));
+		Assert.assertTrue(isElementPresent(IConstants.THANK_YOU_TEXT), "Thank you text did not load");
+		wait = new WebDriverWait(iDriver, 10);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.TOTAL_VALUE)));
+		Assert.assertTrue(isElementPresent(IConstants.TOTAL_VALUE), "Total value did not load");
+		wait = new WebDriverWait(iDriver, 10);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.ORDER_SUBTOTAL)));
+		Assert.assertTrue(isElementPresent(IConstants.ORDER_SUBTOTAL), "Orders subtotal did not load");
+		wait = new WebDriverWait(iDriver, 10);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.PAY_ON_DELIVERY)));
+		Assert.assertTrue(isElementPresent(IConstants.MABROOK_TEXT), "Pay on delivery did not load");
+		wait = new WebDriverWait(iDriver, 10);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.SHIPPING_TOTAL1)));
+		Assert.assertTrue(isElementPresent(IConstants.SHIPPING_TOTAL1), "Shipping total did not load");
+		JavascriptExecutor js = (JavascriptExecutor) iDriver;
+		HashMap<String, String> scrollObject = new HashMap<String, String>();
+		scrollObject.put("direction", "down");
+		js.executeScript("mobile: scroll", scrollObject);
+		wait = new WebDriverWait(iDriver, 10);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.SHIPMENT_ONE)));
+		Assert.assertTrue(isElementPresent(IConstants.SHIPMENT_ONE), "Shipment one  did not load");
+		JavascriptExecutor js1 = (JavascriptExecutor) iDriver;
+		HashMap<String, String> scrollObject1 = new HashMap<String, String>();
+		scrollObject1.put("direction", "down");
+		js1.executeScript("mobile: scroll", scrollObject1);
+		wait = new WebDriverWait(iDriver, 10);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.NEED_HELP)));
+		Assert.assertTrue(isElementPresent(IConstants.NEED_HELP), "Need help did not load");
+		wait = new WebDriverWait(iDriver, 10);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.CHAT_WITH)));
+		Assert.assertTrue(isElementPresent(IConstants.CHAT_WITH), "Chat with did not load");
+		wait = new WebDriverWait(iDriver, 10);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.FOLLOW_US_ON_SOCIAL)));
+		Assert.assertTrue(isElementPresent(IConstants.FOLLOW_US_ON_SOCIAL), "Follow us on social  did not load");
+		wait = new WebDriverWait(iDriver, 10);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.DONE1)));
+		Assert.assertTrue(isElementPresent(IConstants.DONE1), "Done button  did not load");
+		JavascriptExecutor js2 = (JavascriptExecutor) iDriver;
+		HashMap<String, String> scrollObject2 = new HashMap<String, String>();
+		scrollObject2.put("direction", "up");
+		js2.executeScript("mobile: scroll", scrollObject2);
+		viewOrderStatus.click();
 	}
 		
 		

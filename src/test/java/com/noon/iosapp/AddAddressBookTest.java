@@ -56,7 +56,7 @@ String testName="AddAddressBookTest";
 		myAccountPage.gotoMyWallet();
 		myAccountPage.gotoAddressBook();
 		addAddressPage.addNewAddress(deliverAddress);
-		addAddressPage.deliveryAddress(phoneNumber);
+		addAddressPage.deliveryAddressCredit(phoneNumber);
 		topMenuPage.gotoMenu();
 		myAccountPage.gotoMyAccount();
 		myAccountPage.gotoMyWallet();

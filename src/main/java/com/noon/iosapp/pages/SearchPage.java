@@ -32,9 +32,12 @@ public class SearchPage extends BasePage {
 	
 	@FindBy(xpath=IConstants.SEARCH_TYPE)
 	public IOSElement searchType;
-	
+
 	@FindBy(xpath=IConstants.SEARCH_TEXT_SELECT)
 	public IOSElement searchTextSelect;
+	
+	@FindBy(xpath=IConstants.SEARCH_ITEM_LABEL)
+	public IOSElement searchItemLabel;
 	
 	@FindBy(xpath=IConstants.PRODUCT_CELL)
 	public IOSElement productCell;
@@ -59,21 +62,21 @@ public class SearchPage extends BasePage {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.SEARCH_TEXT_SELECT)));
 		searchTextSelect.click();
 		wait = new WebDriverWait(iDriver, 10);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.SEARCH_TEXT_SELECT)));
-		Assert.assertTrue(isElementPresent(IConstants.SEARCH_TEXT_SELECT),"Could not find items");
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.SEARCH_ITEM_LABEL)));
+		Assert.assertTrue(isElementPresent(IConstants.SEARCH_ITEM_LABEL),"Could not find items");
 		wait = new WebDriverWait(iDriver, 10);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.SEARCH_ITEM_PRICE)));
 		Assert.assertTrue(isElementPresent(IConstants.SEARCH_ITEM_PRICE),"Could not find item price");
-		wait = new WebDriverWait(iDriver, 10);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.SEARCH_ITEM_CART)));
-		Assert.assertTrue(isElementPresent(IConstants.SEARCH_ITEM_CART),"Could not find cart image");
+		//wait = new WebDriverWait(iDriver, 10);
+		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.SEARCH_ITEM_CART)));
+		//Assert.assertTrue(isElementPresent(IConstants.SEARCH_ITEM_CART),"Could not find cart image");
 		}
 	
 	public void productDetails() {
 		test.log(LogStatus.INFO, "Click on product details");
 		wait = new WebDriverWait(iDriver, 10);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.SEARCH_TEXT_SELECT)));
-		searchTextSelect.click();
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.SEARCH_ITEM_LABEL)));
+		searchItemLabel.click();
 		wait = new WebDriverWait(iDriver, 40);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.PRODUCT_IMAGE)));
 		Assert.assertTrue(isElementPresent(IConstants.PRODUCT_IMAGE),"Could not load product image element");

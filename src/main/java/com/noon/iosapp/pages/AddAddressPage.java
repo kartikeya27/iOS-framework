@@ -61,6 +61,15 @@ public class AddAddressPage extends BasePage {
 	
 	@FindBy(xpath=IConstants.HIDE_KEYBOARD1)
 	public IOSElement hideKeyboad1;
+
+	@FindBy(xpath=IConstants.DELIVERY_ADDRESS_NAME_CLICK)
+	public IOSElement deliveryAddressNameClick;
+
+	@FindBy(xpath=IConstants.CLEAR_TEXT)
+	public IOSElement clearText;
+
+	@FindBy(xpath=IConstants.DELIVERY_ADDRESS_NAME_EDIT)
+	public IOSElement deliveryAddressNameEdit;
 	
 	@FindBy(xpath=IConstants.DELIVERY_ADDRESS_PHONE_EDIT)
 	public IOSElement deliveryAddressPhoneEdit;
@@ -164,9 +173,27 @@ public class AddAddressPage extends BasePage {
 		wait = new WebDriverWait(iDriver, 10);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.ADDRESS_DONE_BUTTON)));
 		addressDoneButton.click();
-	}	
+	}
+
+	public void deliveryAddressCredit(String phoneNumber)
+	{
+		wait = new WebDriverWait(iDriver, 10);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.ALMOST_DONE_TEXT1)));
+
+		JavascriptExecutor js = (JavascriptExecutor) iDriver;
+		HashMap<String, String> scrollObject = new HashMap<String, String>();
+		scrollObject.put("direction", "down");
+		js.executeScript("mobile: scroll", scrollObject);
+
+		wait = new WebDriverWait(iDriver, 10);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.DELIVERY_ADDRESS_PHONE_EDIT)));
+		deliveryAddressPhoneEdit.sendKeys(phoneNumber);
+		wait = new WebDriverWait(iDriver, 10);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.DELIVERY_ADDRESS_SAVE)));
+		deliverAddressSave.click();
+	}
 	
-	public void deliveryAddress(String phoneNumber) 
+	public void deliveryAddressCOD(String name, String phoneNumber)
 	{
 		wait = new WebDriverWait(iDriver, 10); 
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.ALMOST_DONE_TEXT1)));
@@ -175,7 +202,17 @@ public class AddAddressPage extends BasePage {
 		HashMap<String, String> scrollObject = new HashMap<String, String>();
 		scrollObject.put("direction", "down");
 		js.executeScript("mobile: scroll", scrollObject);
-		
+		wait = new WebDriverWait(iDriver, 10);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.DELIVERY_ADDRESS_NAME_CLICK)));
+		deliveryAddressNameClick.click();
+		//TouchAction action = new TouchAction(iDriver);
+		//action.tap(deliveryAddressNameClick).perform();
+		wait = new WebDriverWait(iDriver, 10);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.CLEAR_TEXT)));
+		clearText.click();
+		wait = new WebDriverWait(iDriver, 10);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.DELIVERY_ADDRESS_NAME_EDIT)));
+		deliveryAddressNameEdit.sendKeys(name);
 		wait = new WebDriverWait(iDriver, 10);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.DELIVERY_ADDRESS_PHONE_EDIT)));
 		deliveryAddressPhoneEdit.sendKeys(phoneNumber);

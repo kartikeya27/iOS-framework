@@ -1,6 +1,7 @@
 package com.noon.iosapp;
 
 import com.noon.iosapp.pages.*;
+import dtos.catalog.ProductByNinResponse;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
@@ -9,6 +10,7 @@ import com.relevantcodes.extentreports.LogStatus;
 
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 import services.AddressService;
+import services.ProductService;
 
 public class PayWithCODTest extends BaseTest {
 
@@ -47,11 +49,17 @@ public class PayWithCODTest extends BaseTest {
 		CheckoutPage checkoutPage = new CheckoutPage(iDriver, test);
 		PageFactory.initElements(new AppiumFieldDecorator(iDriver), checkoutPage);
 
+		AllOrdersPage allOrdersPage = new AllOrdersPage(iDriver, test);
+		PageFactory.initElements(new AppiumFieldDecorator(iDriver), allOrdersPage);
+
 		String userName = "noontesting2+12@gmail.com";
 		String password = "1200@Villa";
-		String searchItem = "Roja Perfume Roja Perfume";
+		ProductService productService = new ProductService();
+		ProductByNinResponse productByNinResponse = productService.getTestProduct();
+		String searchItem = productByNinResponse.getName();
 		String deliverAddress = "Emmaar Square Building #3";
-		String phoneNumber = "0566681264";
+		String name = "Antanina";
+		String phoneNumber = "0554720809";
 
 		searchPage.searchProduct(searchItem);
 		addtoCartPage.addToCart();
@@ -61,9 +69,10 @@ public class PayWithCODTest extends BaseTest {
 		addAddressPage.addNewAddressCheckout();
 		addAddressPage.weDeliverText();
 		addAddressPage.addNewAddress(deliverAddress);
-		addAddressPage.deliveryAddress(phoneNumber);
+		addAddressPage.deliveryAddressCOD(name, phoneNumber);
 		checkoutPage.payOnDelivery();
-		checkoutPage.deleteCardCod();
+		checkoutPage.orderByCOD();
+		allOrdersPage.allOrdersList();
 		AddressService addressService = new AddressService();
 		addressService.deleteAllAddresses(userName, password);
 		topMenu.gotoMenu();

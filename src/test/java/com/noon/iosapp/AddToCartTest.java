@@ -1,5 +1,6 @@
 package com.noon.iosapp;
 
+import dtos.catalog.ProductByNinResponse;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
@@ -9,6 +10,7 @@ import com.noon.iosapp.pages.SearchPage;
 import com.relevantcodes.extentreports.LogStatus;
 
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import services.ProductService;
 
 public class AddToCartTest extends BaseTest {
 	
@@ -26,8 +28,11 @@ public class AddToCartTest extends BaseTest {
 		
 		PageFactory.initElements(new AppiumFieldDecorator(iDriver),searchPage);
 		PageFactory.initElements(new AppiumFieldDecorator(iDriver),addtoCartPage);
-		
-		String searchItem = "Roja Perfume Roja Perfume";
+
+		ProductService productService = new ProductService();
+		ProductByNinResponse productByNinResponse = productService.getTestProduct();
+		String searchItem = productByNinResponse.getName();
+
 		searchPage.searchProduct(searchItem);
 		addtoCartPage.addToCart();
 		addtoCartPage.removeItem();
