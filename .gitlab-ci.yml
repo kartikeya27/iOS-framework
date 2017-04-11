@@ -1,0 +1,10 @@
+
+stages:
+  - build
+
+build_project:
+  stage: build
+  script:
+    - mvn clean compile test
+  tags:
+    - ios-automation
