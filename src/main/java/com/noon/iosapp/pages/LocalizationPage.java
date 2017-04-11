@@ -30,17 +30,21 @@ public class LocalizationPage extends BasePage {
 	public IOSElement englishScreen;
 	
 	public void localizationTest() {
-		test.log(LogStatus.INFO, "Click on menu");
-		appsMenu.click();
-		test.log(LogStatus.INFO, "Click on Arabic pagr");
-		arabicScreen.click();
-		WebDriverWait wait = new WebDriverWait(iDriver, 10);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.ARABIC_SCREEN_LOGIN)));
-		Assert.assertTrue(isElementPresent(IConstants.ARABIC_SCREEN_LOGIN), "Could not load arabic login screen text");
-		test.log(LogStatus.INFO, "Click on menu");
-		appsMenu.click();
-		test.log(LogStatus.INFO, "Click on english page");
-		englishScreen.click();
+		try {
+			test.log(LogStatus.INFO, "Click on menu");
+			appsMenu.click();
+			test.log(LogStatus.INFO, "Click on Arabic pagr");
+			arabicScreen.click();
+			WebDriverWait wait = new WebDriverWait(iDriver, 10);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.ARABIC_SCREEN_LOGIN)));
+			Assert.assertTrue(isElementPresent(IConstants.ARABIC_SCREEN_LOGIN), "Could not load arabic login screen text");
+			test.log(LogStatus.INFO, "Click on menu");
+			appsMenu.click();
+			test.log(LogStatus.INFO, "Click on english page");
+			englishScreen.click();
+		}catch (Exception e) {
+			test.log(LogStatus.FAIL, "Could not find element");
+		}
 	}
 
 }

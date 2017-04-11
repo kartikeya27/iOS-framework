@@ -1,73 +1,153 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="6" total="17" passed="11">
+<testng-results skipped="0" failed="11" total="17" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Noon" duration-ms="1150582" started-at="2017-04-06T11:49:41Z" finished-at="2017-04-06T12:08:52Z">
+  <suite name="Noon" duration-ms="798473" started-at="2017-04-11T11:35:35Z" finished-at="2017-04-11T11:48:53Z">
     <groups>
     </groups>
-    <test name="Splash screen Test" duration-ms="24185" started-at="2017-04-06T11:49:41Z" finished-at="2017-04-06T11:50:06Z">
+    <test name="Splash screen Test" duration-ms="20350" started-at="2017-04-11T11:35:35Z" finished-at="2017-04-11T11:35:55Z">
       <class name="com.noon.iosapp.SplashScreenTest">
-        <test-method status="PASS" signature="SplashScreen()[pri:0, instance:com.noon.iosapp.SplashScreenTest@34c4973]" name="SplashScreen" duration-ms="23519" started-at="2017-04-06T15:49:41Z" finished-at="2017-04-06T15:50:05Z">
+        <test-method status="PASS" signature="SplashScreen()[pri:0, instance:com.noon.iosapp.SplashScreenTest@34c4973]" name="SplashScreen" duration-ms="19748" started-at="2017-04-11T15:35:35Z" finished-at="2017-04-11T15:35:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SplashScreen -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.noon.iosapp.SplashScreenTest@34c4973]" name="quit" is-config="true" duration-ms="659" started-at="2017-04-06T15:50:05Z" finished-at="2017-04-06T15:50:06Z">
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.noon.iosapp.SplashScreenTest@34c4973]" name="quit" is-config="true" duration-ms="595" started-at="2017-04-11T15:35:54Z" finished-at="2017-04-11T15:35:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
       </class> <!-- com.noon.iosapp.SplashScreenTest -->
     </test> <!-- Splash screen Test -->
-    <test name="Localization page Test" duration-ms="30211" started-at="2017-04-06T11:50:06Z" finished-at="2017-04-06T11:50:36Z">
+    <test name="Localization page Test" duration-ms="25737" started-at="2017-04-11T11:35:55Z" finished-at="2017-04-11T11:36:21Z">
       <class name="com.noon.iosapp.LocalizationTest">
-        <test-method status="PASS" signature="prodcutDetails()[pri:0, instance:com.noon.iosapp.LocalizationTest@1a8a8f7c]" name="prodcutDetails" duration-ms="29801" started-at="2017-04-06T15:50:06Z" finished-at="2017-04-06T15:50:35Z">
+        <test-method status="PASS" signature="prodcutDetails()[pri:0, instance:com.noon.iosapp.LocalizationTest@1a8a8f7c]" name="prodcutDetails" duration-ms="25339" started-at="2017-04-11T15:35:55Z" finished-at="2017-04-11T15:36:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- prodcutDetails -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.noon.iosapp.LocalizationTest@1a8a8f7c]" name="quit" is-config="true" duration-ms="410" started-at="2017-04-06T15:50:35Z" finished-at="2017-04-06T15:50:36Z">
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.noon.iosapp.LocalizationTest@1a8a8f7c]" name="quit" is-config="true" duration-ms="397" started-at="2017-04-11T15:36:20Z" finished-at="2017-04-11T15:36:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
       </class> <!-- com.noon.iosapp.LocalizationTest -->
     </test> <!-- Localization page Test -->
-    <test name="Side Bar Menu link Test" duration-ms="44872" started-at="2017-04-06T11:50:36Z" finished-at="2017-04-06T11:51:21Z">
+    <test name="Side Bar Menu link Test" duration-ms="40482" started-at="2017-04-11T11:36:21Z" finished-at="2017-04-11T11:37:01Z">
       <class name="com.noon.iosapp.SideBarLinksTest">
-        <test-method status="PASS" signature="sideBarLinks()[pri:0, instance:com.noon.iosapp.SideBarLinksTest@36b4cef0]" name="sideBarLinks" duration-ms="44451" started-at="2017-04-06T15:50:36Z" finished-at="2017-04-06T15:51:20Z">
+        <test-method status="PASS" signature="sideBarLinks()[pri:0, instance:com.noon.iosapp.SideBarLinksTest@36b4cef0]" name="sideBarLinks" duration-ms="40128" started-at="2017-04-11T15:36:21Z" finished-at="2017-04-11T15:37:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sideBarLinks -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.noon.iosapp.SideBarLinksTest@36b4cef0]" name="quit" is-config="true" duration-ms="421" started-at="2017-04-06T15:51:20Z" finished-at="2017-04-06T15:51:21Z">
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.noon.iosapp.SideBarLinksTest@36b4cef0]" name="quit" is-config="true" duration-ms="353" started-at="2017-04-11T15:37:01Z" finished-at="2017-04-11T15:37:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
       </class> <!-- com.noon.iosapp.SideBarLinksTest -->
     </test> <!-- Side Bar Menu link Test -->
-    <test name="Search Test" duration-ms="37800" started-at="2017-04-06T11:51:21Z" finished-at="2017-04-06T11:51:59Z">
+    <test name="Search Test" duration-ms="19038" started-at="2017-04-11T11:37:01Z" finished-at="2017-04-11T11:37:20Z">
       <class name="com.noon.iosapp.SearchTest">
-        <test-method status="PASS" signature="searchItems()[pri:0, instance:com.noon.iosapp.SearchTest@1d8d30f7]" name="searchItems" duration-ms="37372" started-at="2017-04-06T15:51:21Z" finished-at="2017-04-06T15:51:58Z">
+        <test-method status="FAIL" signature="searchItems()[pri:0, instance:com.noon.iosapp.SearchTest@1d8d30f7]" name="searchItems" duration-ms="18621" started-at="2017-04-11T15:37:01Z" finished-at="2017-04-11T15:37:20Z">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[com/fasterxml/jackson/databind/JavaType]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: com/fasterxml/jackson/databind/JavaType
+	at services.ProductService.<init>(ProductService.java:18)
+	at com.noon.iosapp.SearchTest.searchItems(SearchTest.java:27)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.TestNG.privateMain(TestNG.java:1355)
+	at org.testng.TestNG.main(TestNG.java:1324)
+Caused by: java.lang.ClassNotFoundException: com.fasterxml.jackson.databind.JavaType
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 25 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchItems -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.noon.iosapp.SearchTest@1d8d30f7]" name="quit" is-config="true" duration-ms="428" started-at="2017-04-06T15:51:58Z" finished-at="2017-04-06T15:51:59Z">
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.noon.iosapp.SearchTest@1d8d30f7]" name="quit" is-config="true" duration-ms="416" started-at="2017-04-11T15:37:20Z" finished-at="2017-04-11T15:37:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
       </class> <!-- com.noon.iosapp.SearchTest -->
     </test> <!-- Search Test -->
-    <test name="Product Details Test" duration-ms="57915" started-at="2017-04-06T11:51:59Z" finished-at="2017-04-06T11:52:56Z">
+    <test name="Product Details Test" duration-ms="18985" started-at="2017-04-11T11:37:20Z" finished-at="2017-04-11T11:37:39Z">
       <class name="com.noon.iosapp.ProductDetailsTest">
-        <test-method status="PASS" signature="prodcutDetails()[pri:0, instance:com.noon.iosapp.ProductDetailsTest@5bb21b69]" name="prodcutDetails" duration-ms="57496" started-at="2017-04-06T15:51:59Z" finished-at="2017-04-06T15:52:56Z">
+        <test-method status="FAIL" signature="prodcutDetails()[pri:0, instance:com.noon.iosapp.ProductDetailsTest@5bb21b69]" name="prodcutDetails" duration-ms="18570" started-at="2017-04-11T15:37:20Z" finished-at="2017-04-11T15:37:39Z">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[com/fasterxml/jackson/databind/JavaType]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: com/fasterxml/jackson/databind/JavaType
+	at services.ProductService.<init>(ProductService.java:18)
+	at com.noon.iosapp.ProductDetailsTest.prodcutDetails(ProductDetailsTest.java:25)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.TestNG.privateMain(TestNG.java:1355)
+	at org.testng.TestNG.main(TestNG.java:1324)
+Caused by: java.lang.ClassNotFoundException: com.fasterxml.jackson.databind.JavaType
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 25 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- prodcutDetails -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.noon.iosapp.ProductDetailsTest@5bb21b69]" name="quit" is-config="true" duration-ms="417" started-at="2017-04-06T15:52:56Z" finished-at="2017-04-06T15:52:56Z">
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.noon.iosapp.ProductDetailsTest@5bb21b69]" name="quit" is-config="true" duration-ms="415" started-at="2017-04-11T15:37:39Z" finished-at="2017-04-11T15:37:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
       </class> <!-- com.noon.iosapp.ProductDetailsTest -->
     </test> <!-- Product Details Test -->
-    <test name="Register email through OTP code Test" duration-ms="70070" started-at="2017-04-06T11:52:56Z" finished-at="2017-04-06T11:54:07Z">
+    <test name="Register email through OTP code Test" duration-ms="67715" started-at="2017-04-11T11:37:39Z" finished-at="2017-04-11T11:38:47Z">
       <class name="com.noon.iosapp.RegisterWithEmailTest">
-        <test-method status="FAIL" signature="registerWithEmail()[pri:0, instance:com.noon.iosapp.RegisterWithEmailTest@4abdb505]" name="registerWithEmail" duration-ms="69662" started-at="2017-04-06T15:52:56Z" finished-at="2017-04-06T15:54:06Z">
+        <test-method status="FAIL" signature="registerWithEmail()[pri:0, instance:com.noon.iosapp.RegisterWithEmailTest@4abdb505]" name="registerWithEmail" duration-ms="67312" started-at="2017-04-11T15:37:39Z" finished-at="2017-04-11T15:38:47Z">
           <exception class="java.lang.NoClassDefFoundError">
             <message>
               <![CDATA[org/slf4j/LoggerFactory]]>
@@ -112,75 +192,195 @@ Caused by: java.lang.ClassNotFoundException: org.slf4j.LoggerFactory
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerWithEmail -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.noon.iosapp.RegisterWithEmailTest@4abdb505]" name="quit" is-config="true" duration-ms="406" started-at="2017-04-06T15:54:06Z" finished-at="2017-04-06T15:54:07Z">
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.noon.iosapp.RegisterWithEmailTest@4abdb505]" name="quit" is-config="true" duration-ms="402" started-at="2017-04-11T15:38:47Z" finished-at="2017-04-11T15:38:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
       </class> <!-- com.noon.iosapp.RegisterWithEmailTest -->
     </test> <!-- Register email through OTP code Test -->
-    <test name="Login By Phone Test" duration-ms="204207" started-at="2017-04-06T11:54:07Z" finished-at="2017-04-06T11:57:31Z">
+    <test name="Login By Phone Test" duration-ms="203018" started-at="2017-04-11T11:38:47Z" finished-at="2017-04-11T11:42:10Z">
       <class name="com.noon.iosapp.LoginByPhoneTest">
-        <test-method status="PASS" signature="loginByPhone()[pri:0, instance:com.noon.iosapp.LoginByPhoneTest@45820e51]" name="loginByPhone" duration-ms="203729" started-at="2017-04-06T15:54:07Z" finished-at="2017-04-06T15:57:30Z">
+        <test-method status="PASS" signature="loginByPhone()[pri:0, instance:com.noon.iosapp.LoginByPhoneTest@45820e51]" name="loginByPhone" duration-ms="202539" started-at="2017-04-11T15:38:47Z" finished-at="2017-04-11T15:42:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginByPhone -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.noon.iosapp.LoginByPhoneTest@45820e51]" name="quit" is-config="true" duration-ms="478" started-at="2017-04-06T15:57:30Z" finished-at="2017-04-06T15:57:31Z">
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.noon.iosapp.LoginByPhoneTest@45820e51]" name="quit" is-config="true" duration-ms="477" started-at="2017-04-11T15:42:10Z" finished-at="2017-04-11T15:42:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
       </class> <!-- com.noon.iosapp.LoginByPhoneTest -->
     </test> <!-- Login By Phone Test -->
-    <test name="Login By Email Test" duration-ms="71536" started-at="2017-04-06T11:57:31Z" finished-at="2017-04-06T11:58:43Z">
+    <test name="Login By Email Test" duration-ms="69430" started-at="2017-04-11T11:42:10Z" finished-at="2017-04-11T11:43:20Z">
       <class name="com.noon.iosapp.LoginByEmailTest">
-        <test-method status="PASS" signature="loginByEmail()[pri:0, instance:com.noon.iosapp.LoginByEmailTest@5bcea91b]" name="loginByEmail" duration-ms="71067" started-at="2017-04-06T15:57:31Z" finished-at="2017-04-06T15:58:42Z">
+        <test-method status="PASS" signature="loginByEmail()[pri:0, instance:com.noon.iosapp.LoginByEmailTest@5bcea91b]" name="loginByEmail" duration-ms="68970" started-at="2017-04-11T15:42:10Z" finished-at="2017-04-11T15:43:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginByEmail -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.noon.iosapp.LoginByEmailTest@5bcea91b]" name="quit" is-config="true" duration-ms="468" started-at="2017-04-06T15:58:42Z" finished-at="2017-04-06T15:58:43Z">
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.noon.iosapp.LoginByEmailTest@5bcea91b]" name="quit" is-config="true" duration-ms="459" started-at="2017-04-11T15:43:19Z" finished-at="2017-04-11T15:43:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
       </class> <!-- com.noon.iosapp.LoginByEmailTest -->
     </test> <!-- Login By Email Test -->
-    <test name="Add to cart Test" duration-ms="48947" started-at="2017-04-06T11:58:43Z" finished-at="2017-04-06T11:59:31Z">
+    <test name="Add to cart Test" duration-ms="20025" started-at="2017-04-11T11:43:20Z" finished-at="2017-04-11T11:43:40Z">
       <class name="com.noon.iosapp.AddToCartTest">
-        <test-method status="PASS" signature="addToCart()[pri:0, instance:com.noon.iosapp.AddToCartTest@46daef40]" name="addToCart" duration-ms="48492" started-at="2017-04-06T15:58:43Z" finished-at="2017-04-06T15:59:31Z">
+        <test-method status="FAIL" signature="addToCart()[pri:0, instance:com.noon.iosapp.AddToCartTest@46daef40]" name="addToCart" duration-ms="19554" started-at="2017-04-11T15:43:20Z" finished-at="2017-04-11T15:43:39Z">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[com/fasterxml/jackson/databind/JavaType]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: com/fasterxml/jackson/databind/JavaType
+	at services.ProductService.<init>(ProductService.java:18)
+	at com.noon.iosapp.AddToCartTest.addToCart(AddToCartTest.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.TestNG.privateMain(TestNG.java:1355)
+	at org.testng.TestNG.main(TestNG.java:1324)
+Caused by: java.lang.ClassNotFoundException: com.fasterxml.jackson.databind.JavaType
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 25 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addToCart -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.noon.iosapp.AddToCartTest@46daef40]" name="quit" is-config="true" duration-ms="455" started-at="2017-04-06T15:59:31Z" finished-at="2017-04-06T15:59:31Z">
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.noon.iosapp.AddToCartTest@46daef40]" name="quit" is-config="true" duration-ms="471" started-at="2017-04-11T15:43:39Z" finished-at="2017-04-11T15:43:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
       </class> <!-- com.noon.iosapp.AddToCartTest -->
     </test> <!-- Add to cart Test -->
-    <test name="Buy now Test" duration-ms="47011" started-at="2017-04-06T11:59:31Z" finished-at="2017-04-06T12:00:18Z">
+    <test name="Buy now Test" duration-ms="18964" started-at="2017-04-11T11:43:40Z" finished-at="2017-04-11T11:43:59Z">
       <class name="com.noon.iosapp.BuyNowTest">
-        <test-method status="PASS" signature="buyNowItems()[pri:0, instance:com.noon.iosapp.BuyNowTest@7a3d45bd]" name="buyNowItems" duration-ms="46567" started-at="2017-04-06T15:59:31Z" finished-at="2017-04-06T16:00:18Z">
+        <test-method status="FAIL" signature="buyNowItems()[pri:0, instance:com.noon.iosapp.BuyNowTest@7a3d45bd]" name="buyNowItems" duration-ms="18530" started-at="2017-04-11T15:43:40Z" finished-at="2017-04-11T15:43:58Z">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[com/fasterxml/jackson/databind/JavaType]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: com/fasterxml/jackson/databind/JavaType
+	at services.ProductService.<init>(ProductService.java:18)
+	at com.noon.iosapp.BuyNowTest.buyNowItems(BuyNowTest.java:32)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.TestNG.privateMain(TestNG.java:1355)
+	at org.testng.TestNG.main(TestNG.java:1324)
+Caused by: java.lang.ClassNotFoundException: com.fasterxml.jackson.databind.JavaType
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 25 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- buyNowItems -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.noon.iosapp.BuyNowTest@7a3d45bd]" name="quit" is-config="true" duration-ms="441" started-at="2017-04-06T16:00:18Z" finished-at="2017-04-06T16:00:18Z">
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.noon.iosapp.BuyNowTest@7a3d45bd]" name="quit" is-config="true" duration-ms="434" started-at="2017-04-11T15:43:58Z" finished-at="2017-04-11T15:43:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
       </class> <!-- com.noon.iosapp.BuyNowTest -->
     </test> <!-- Buy now Test -->
-    <test name="Edit cart Test" duration-ms="46065" started-at="2017-04-06T12:00:19Z" finished-at="2017-04-06T12:01:05Z">
+    <test name="Edit cart Test" duration-ms="19572" started-at="2017-04-11T11:43:59Z" finished-at="2017-04-11T11:44:18Z">
       <class name="com.noon.iosapp.EditCartTest">
-        <test-method status="PASS" signature="editCartItems()[pri:0, instance:com.noon.iosapp.EditCartTest@3aeaafa6]" name="editCartItems" duration-ms="45608" started-at="2017-04-06T16:00:19Z" finished-at="2017-04-06T16:01:04Z">
+        <test-method status="FAIL" signature="editCartItems()[pri:0, instance:com.noon.iosapp.EditCartTest@3aeaafa6]" name="editCartItems" duration-ms="19141" started-at="2017-04-11T15:43:59Z" finished-at="2017-04-11T15:44:18Z">
+          <exception class="java.lang.NoClassDefFoundError">
+            <message>
+              <![CDATA[com/fasterxml/jackson/databind/JavaType]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoClassDefFoundError: com/fasterxml/jackson/databind/JavaType
+	at services.ProductService.<init>(ProductService.java:18)
+	at com.noon.iosapp.EditCartTest.editCartItems(EditCartTest.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1215)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+	at org.testng.TestNG.run(TestNG.java:1048)
+	at org.testng.TestNG.privateMain(TestNG.java:1355)
+	at org.testng.TestNG.main(TestNG.java:1324)
+Caused by: java.lang.ClassNotFoundException: com.fasterxml.jackson.databind.JavaType
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 25 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoClassDefFoundError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editCartItems -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.noon.iosapp.EditCartTest@3aeaafa6]" name="quit" is-config="true" duration-ms="457" started-at="2017-04-06T16:01:04Z" finished-at="2017-04-06T16:01:05Z">
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.noon.iosapp.EditCartTest@3aeaafa6]" name="quit" is-config="true" duration-ms="430" started-at="2017-04-11T15:44:18Z" finished-at="2017-04-11T15:44:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
       </class> <!-- com.noon.iosapp.EditCartTest -->
     </test> <!-- Edit cart Test -->
-    <test name="Add new address from Address Book Test" duration-ms="85152" started-at="2017-04-06T12:01:05Z" finished-at="2017-04-06T12:02:30Z">
+    <test name="Add new address from Address Book Test" duration-ms="84397" started-at="2017-04-11T11:44:19Z" finished-at="2017-04-11T11:45:43Z">
       <class name="com.noon.iosapp.AddAddressBookTest">
-        <test-method status="FAIL" signature="addAddressBook()[pri:0, instance:com.noon.iosapp.AddAddressBookTest@eafc191]" name="addAddressBook" duration-ms="84712" started-at="2017-04-06T16:01:05Z" finished-at="2017-04-06T16:02:29Z">
+        <test-method status="FAIL" signature="addAddressBook()[pri:0, instance:com.noon.iosapp.AddAddressBookTest@eafc191]" name="addAddressBook" duration-ms="83991" started-at="2017-04-11T15:44:19Z" finished-at="2017-04-11T15:45:43Z">
           <exception class="java.lang.NoClassDefFoundError">
             <message>
               <![CDATA[com/fasterxml/jackson/databind/JavaType]]>
@@ -224,62 +424,23 @@ Caused by: java.lang.ClassNotFoundException: com.fasterxml.jackson.databind.Java
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addAddressBook -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.noon.iosapp.AddAddressBookTest@eafc191]" name="quit" is-config="true" duration-ms="439" started-at="2017-04-06T16:02:29Z" finished-at="2017-04-06T16:02:30Z">
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.noon.iosapp.AddAddressBookTest@eafc191]" name="quit" is-config="true" duration-ms="406" started-at="2017-04-11T15:45:43Z" finished-at="2017-04-11T15:45:43Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
       </class> <!-- com.noon.iosapp.AddAddressBookTest -->
     </test> <!-- Add new address from Address Book Test -->
-    <test name="Add new address from checkout Test" duration-ms="49820" started-at="2017-04-06T12:02:30Z" finished-at="2017-04-06T12:03:20Z">
+    <test name="Add new address from checkout Test" duration-ms="18877" started-at="2017-04-11T11:45:43Z" finished-at="2017-04-11T11:46:02Z">
       <class name="com.noon.iosapp.AddAddressCheckoutTest">
-        <test-method status="FAIL" signature="addToCart()[pri:0, instance:com.noon.iosapp.AddAddressCheckoutTest@491cc5c9]" name="addToCart" duration-ms="49377" started-at="2017-04-06T16:02:30Z" finished-at="2017-04-06T16:03:19Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="FAIL" signature="addToCart()[pri:0, instance:com.noon.iosapp.AddAddressCheckoutTest@491cc5c9]" name="addToCart" duration-ms="18465" started-at="2017-04-11T15:45:43Z" finished-at="2017-04-11T15:46:01Z">
+          <exception class="java.lang.NoClassDefFoundError">
             <message>
-              <![CDATA[An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 1.29 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:06:42'
-System info: host: 'kartik.local', ip: '169.254.95.48', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.4', java.version: '1.8.0_111'
-Driver info: io.appium.java_client.ios.IOSDriver
-Capabilities [{app=/Users/kartikbhatt/test-team/ios/POM_Noon/ipa/FastFish.ipa, networkConnectionEnabled=false, appiumVersion=1.6, databaseEnabled=false, deviceName=iPhone 7, platform=MAC, pressKey=true, platformVersion=10.3, webStorageEnabled=false, locationContextEnabled=false, automationName=XCUITest, browserName=, takesScreenshot=true, javascriptEnabled=true, platformName=iOS, udid=B7C3E4D4-C3EA-4DB0-A808-2ECEB73D8425}]
-Session ID: 96d9c551-3045-447c-850d-bc6e77f93d79
-*** Element info: {Using=xpath, value=//XCUIElementTypeStaticText[@name='Sign in with']}]]>
+              <![CDATA[com/fasterxml/jackson/databind/JavaType]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 1.29 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:06:42'
-System info: host: 'kartik.local', ip: '169.254.95.48', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.4', java.version: '1.8.0_111'
-Driver info: io.appium.java_client.ios.IOSDriver
-Capabilities [{app=/Users/kartikbhatt/test-team/ios/POM_Noon/ipa/FastFish.ipa, networkConnectionEnabled=false, appiumVersion=1.6, databaseEnabled=false, deviceName=iPhone 7, platform=MAC, pressKey=true, platformVersion=10.3, webStorageEnabled=false, locationContextEnabled=false, automationName=XCUITest, browserName=, takesScreenshot=true, javascriptEnabled=true, platformName=iOS, udid=B7C3E4D4-C3EA-4DB0-A808-2ECEB73D8425}]
-Session ID: 96d9c551-3045-447c-850d-bc6e77f93d79
-*** Element info: {Using=xpath, value=//XCUIElementTypeStaticText[@name='Sign in with']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:51)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:67)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:145)
-	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.findElementByXPath(IOSDriver.java:1)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:63)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
-	at com.noon.iosapp.pages.AddAddressPage.signinTab(AddAddressPage.java:95)
-	at com.noon.iosapp.AddAddressCheckoutTest.addToCart(AddAddressCheckoutTest.java:57)
+              <![CDATA[java.lang.NoClassDefFoundError: com/fasterxml/jackson/databind/JavaType
+	at services.ProductService.<init>(ProductService.java:18)
+	at com.noon.iosapp.AddAddressCheckoutTest.addToCart(AddAddressCheckoutTest.java:52)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -303,53 +464,47 @@ Session ID: 96d9c551-3045-447c-850d-bc6e77f93d79
 	at org.testng.TestNG.run(TestNG.java:1048)
 	at org.testng.TestNG.privateMain(TestNG.java:1355)
 	at org.testng.TestNG.main(TestNG.java:1324)
+Caused by: java.lang.ClassNotFoundException: com.fasterxml.jackson.databind.JavaType
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 25 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.NoClassDefFoundError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addToCart -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.noon.iosapp.AddAddressCheckoutTest@491cc5c9]" name="quit" is-config="true" duration-ms="442" started-at="2017-04-06T16:03:19Z" finished-at="2017-04-06T16:03:20Z">
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.noon.iosapp.AddAddressCheckoutTest@491cc5c9]" name="quit" is-config="true" duration-ms="412" started-at="2017-04-11T15:46:01Z" finished-at="2017-04-11T15:46:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
       </class> <!-- com.noon.iosapp.AddAddressCheckoutTest -->
     </test> <!-- Add new address from checkout Test -->
-    <test name="Add credit card through Wallet Test" duration-ms="148520" started-at="2017-04-06T12:03:20Z" finished-at="2017-04-06T12:05:48Z">
+    <test name="Add credit card through Wallet Test" duration-ms="114158" started-at="2017-04-11T11:46:02Z" finished-at="2017-04-11T11:47:56Z">
       <class name="com.noon.iosapp.AddCreditCardWalletTest">
-        <test-method status="PASS" signature="addCreditCardWallet()[pri:0, instance:com.noon.iosapp.AddCreditCardWalletTest@66d1af89]" name="addCreditCardWallet" duration-ms="148062" started-at="2017-04-06T16:03:20Z" finished-at="2017-04-06T16:05:48Z">
+        <test-method status="PASS" signature="addCreditCardWallet()[pri:0, instance:com.noon.iosapp.AddCreditCardWalletTest@66d1af89]" name="addCreditCardWallet" duration-ms="113728" started-at="2017-04-11T15:46:02Z" finished-at="2017-04-11T15:47:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addCreditCardWallet -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.noon.iosapp.AddCreditCardWalletTest@66d1af89]" name="quit" is-config="true" duration-ms="457" started-at="2017-04-06T16:05:48Z" finished-at="2017-04-06T16:05:48Z">
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.noon.iosapp.AddCreditCardWalletTest@66d1af89]" name="quit" is-config="true" duration-ms="429" started-at="2017-04-11T15:47:56Z" finished-at="2017-04-11T15:47:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
       </class> <!-- com.noon.iosapp.AddCreditCardWalletTest -->
     </test> <!-- Add credit card through Wallet Test -->
-    <test name="Add credit card through checkout Test" duration-ms="77399" started-at="2017-04-06T12:05:48Z" finished-at="2017-04-06T12:07:05Z">
+    <test name="Add credit card through checkout Test" duration-ms="18947" started-at="2017-04-11T11:47:57Z" finished-at="2017-04-11T11:48:15Z">
       <class name="com.noon.iosapp.AddCreditCardCheckoutTest">
-        <test-method status="FAIL" signature="AddCreditCardCheckout()[pri:0, instance:com.noon.iosapp.AddCreditCardCheckoutTest@42eca56e]" name="AddCreditCardCheckout" duration-ms="76967" started-at="2017-04-06T16:05:48Z" finished-at="2017-04-06T16:07:05Z">
-          <exception class="org.openqa.selenium.TimeoutException">
+        <test-method status="FAIL" signature="AddCreditCardCheckout()[pri:0, instance:com.noon.iosapp.AddCreditCardCheckoutTest@42eca56e]" name="AddCreditCardCheckout" duration-ms="18551" started-at="2017-04-11T15:47:57Z" finished-at="2017-04-11T15:48:15Z">
+          <exception class="java.lang.NoClassDefFoundError">
             <message>
-              <![CDATA[Timed out after 10 seconds waiting for visibility of element located by By.xpath: //XCUIElementTypeStaticText[@name='Add new address']
-Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:06:42'
-System info: host: 'kartik.local', ip: '169.254.95.48', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.4', java.version: '1.8.0_111'
-Driver info: io.appium.java_client.ios.IOSDriver
-Capabilities [{app=/Users/kartikbhatt/test-team/ios/POM_Noon/ipa/FastFish.ipa, networkConnectionEnabled=false, appiumVersion=1.6, databaseEnabled=false, deviceName=iPhone 7, platform=MAC, pressKey=true, platformVersion=10.3, webStorageEnabled=false, locationContextEnabled=false, automationName=XCUITest, browserName=, takesScreenshot=true, javascriptEnabled=true, platformName=iOS, udid=B7C3E4D4-C3EA-4DB0-A808-2ECEB73D8425}]
-Session ID: d0f77f26-9ed2-47cb-8dae-5b279dedc0fe]]>
+              <![CDATA[com/fasterxml/jackson/databind/JavaType]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Timed out after 10 seconds waiting for visibility of element located by By.xpath: //XCUIElementTypeStaticText[@name='Add new address']
-Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:06:42'
-System info: host: 'kartik.local', ip: '169.254.95.48', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.4', java.version: '1.8.0_111'
-Driver info: io.appium.java_client.ios.IOSDriver
-Capabilities [{app=/Users/kartikbhatt/test-team/ios/POM_Noon/ipa/FastFish.ipa, networkConnectionEnabled=false, appiumVersion=1.6, databaseEnabled=false, deviceName=iPhone 7, platform=MAC, pressKey=true, platformVersion=10.3, webStorageEnabled=false, locationContextEnabled=false, automationName=XCUITest, browserName=, takesScreenshot=true, javascriptEnabled=true, platformName=iOS, udid=B7C3E4D4-C3EA-4DB0-A808-2ECEB73D8425}]
-Session ID: d0f77f26-9ed2-47cb-8dae-5b279dedc0fe
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
-	at com.noon.iosapp.pages.AddAddressPage.weDeliverText(AddAddressPage.java:110)
-	at com.noon.iosapp.AddCreditCardCheckoutTest.AddCreditCardCheckout(AddCreditCardCheckoutTest.java:73)
+              <![CDATA[java.lang.NoClassDefFoundError: com/fasterxml/jackson/databind/JavaType
+	at services.ProductService.<init>(ProductService.java:18)
+	at com.noon.iosapp.AddCreditCardCheckoutTest.AddCreditCardCheckout(AddCreditCardCheckoutTest.java:60)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -373,78 +528,34 @@ Session ID: d0f77f26-9ed2-47cb-8dae-5b279dedc0fe
 	at org.testng.TestNG.run(TestNG.java:1048)
 	at org.testng.TestNG.privateMain(TestNG.java:1355)
 	at org.testng.TestNG.main(TestNG.java:1324)
-Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 1.28 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:06:42'
-System info: host: 'kartik.local', ip: '169.254.95.48', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.4', java.version: '1.8.0_111'
-Driver info: io.appium.java_client.ios.IOSDriver
-Capabilities [{app=/Users/kartikbhatt/test-team/ios/POM_Noon/ipa/FastFish.ipa, networkConnectionEnabled=false, appiumVersion=1.6, databaseEnabled=false, deviceName=iPhone 7, platform=MAC, pressKey=true, platformVersion=10.3, webStorageEnabled=false, locationContextEnabled=false, automationName=XCUITest, browserName=, takesScreenshot=true, javascriptEnabled=true, platformName=iOS, udid=B7C3E4D4-C3EA-4DB0-A808-2ECEB73D8425}]
-Session ID: d0f77f26-9ed2-47cb-8dae-5b279dedc0fe
-*** Element info: {Using=xpath, value=//XCUIElementTypeStaticText[@name='Add new address']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:51)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:67)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:145)
-	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.findElementByXPath(IOSDriver.java:1)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:63)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:911)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$0(ExpectedConditions.java:909)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:1)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+Caused by: java.lang.ClassNotFoundException: com.fasterxml.jackson.databind.JavaType
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
 	... 25 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- java.lang.NoClassDefFoundError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddCreditCardCheckout -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.noon.iosapp.AddCreditCardCheckoutTest@42eca56e]" name="quit" is-config="true" duration-ms="431" started-at="2017-04-06T16:07:05Z" finished-at="2017-04-06T16:07:05Z">
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.noon.iosapp.AddCreditCardCheckoutTest@42eca56e]" name="quit" is-config="true" duration-ms="395" started-at="2017-04-11T15:48:15Z" finished-at="2017-04-11T15:48:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
       </class> <!-- com.noon.iosapp.AddCreditCardCheckoutTest -->
     </test> <!-- Add credit card through checkout Test -->
-    <test name="Checkout through COD Test" duration-ms="55699" started-at="2017-04-06T12:07:05Z" finished-at="2017-04-06T12:08:01Z">
+    <test name="Checkout through COD Test" duration-ms="18842" started-at="2017-04-11T11:48:15Z" finished-at="2017-04-11T11:48:34Z">
       <class name="com.noon.iosapp.PayWithCODTest">
-        <test-method status="FAIL" signature="payWithCODCard()[pri:0, instance:com.noon.iosapp.PayWithCODTest@33723e30]" name="payWithCODCard" duration-ms="55253" started-at="2017-04-06T16:07:05Z" finished-at="2017-04-06T16:08:01Z">
-          <exception class="org.openqa.selenium.TimeoutException">
+        <test-method status="FAIL" signature="payWithCODCard()[pri:0, instance:com.noon.iosapp.PayWithCODTest@33723e30]" name="payWithCODCard" duration-ms="18433" started-at="2017-04-11T15:48:15Z" finished-at="2017-04-11T15:48:34Z">
+          <exception class="java.lang.NoClassDefFoundError">
             <message>
-              <![CDATA[Timed out after 10 seconds waiting for visibility of element located by By.xpath: //XCUIElementTypeCell[2]/XCUIElementTypeButton[1]
-Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:06:42'
-System info: host: 'kartik.local', ip: '169.254.95.48', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.4', java.version: '1.8.0_111'
-Driver info: io.appium.java_client.ios.IOSDriver
-Capabilities [{app=/Users/kartikbhatt/test-team/ios/POM_Noon/ipa/FastFish.ipa, networkConnectionEnabled=false, appiumVersion=1.6, databaseEnabled=false, deviceName=iPhone 7, platform=MAC, pressKey=true, platformVersion=10.3, webStorageEnabled=false, locationContextEnabled=false, automationName=XCUITest, browserName=, takesScreenshot=true, javascriptEnabled=true, platformName=iOS, udid=B7C3E4D4-C3EA-4DB0-A808-2ECEB73D8425}]
-Session ID: c65e42ff-ce1f-4678-8797-134713134fba]]>
+              <![CDATA[com/fasterxml/jackson/databind/JavaType]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Timed out after 10 seconds waiting for visibility of element located by By.xpath: //XCUIElementTypeCell[2]/XCUIElementTypeButton[1]
-Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:06:42'
-System info: host: 'kartik.local', ip: '169.254.95.48', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.4', java.version: '1.8.0_111'
-Driver info: io.appium.java_client.ios.IOSDriver
-Capabilities [{app=/Users/kartikbhatt/test-team/ios/POM_Noon/ipa/FastFish.ipa, networkConnectionEnabled=false, appiumVersion=1.6, databaseEnabled=false, deviceName=iPhone 7, platform=MAC, pressKey=true, platformVersion=10.3, webStorageEnabled=false, locationContextEnabled=false, automationName=XCUITest, browserName=, takesScreenshot=true, javascriptEnabled=true, platformName=iOS, udid=B7C3E4D4-C3EA-4DB0-A808-2ECEB73D8425}]
-Session ID: c65e42ff-ce1f-4678-8797-134713134fba
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:80)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:261)
-	at com.noon.iosapp.pages.AddToCartPage.addToCart(AddToCartPage.java:91)
+              <![CDATA[java.lang.NoClassDefFoundError: com/fasterxml/jackson/databind/JavaType
+	at services.ProductService.<init>(ProductService.java:18)
 	at com.noon.iosapp.PayWithCODTest.payWithCODCard(PayWithCODTest.java:57)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
@@ -469,106 +580,35 @@ Session ID: c65e42ff-ce1f-4678-8797-134713134fba
 	at org.testng.TestNG.run(TestNG.java:1048)
 	at org.testng.TestNG.privateMain(TestNG.java:1355)
 	at org.testng.TestNG.main(TestNG.java:1324)
-Caused by: org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 1.26 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:06:42'
-System info: host: 'kartik.local', ip: '169.254.95.48', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.4', java.version: '1.8.0_111'
-Driver info: io.appium.java_client.ios.IOSDriver
-Capabilities [{app=/Users/kartikbhatt/test-team/ios/POM_Noon/ipa/FastFish.ipa, networkConnectionEnabled=false, appiumVersion=1.6, databaseEnabled=false, deviceName=iPhone 7, platform=MAC, pressKey=true, platformVersion=10.3, webStorageEnabled=false, locationContextEnabled=false, automationName=XCUITest, browserName=, takesScreenshot=true, javascriptEnabled=true, platformName=iOS, udid=B7C3E4D4-C3EA-4DB0-A808-2ECEB73D8425}]
-Session ID: c65e42ff-ce1f-4678-8797-134713134fba
-*** Element info: {Using=xpath, value=//XCUIElementTypeCell[2]/XCUIElementTypeButton[1]}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:51)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:67)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:145)
-	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.findElementByXPath(IOSDriver.java:1)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:63)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:911)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$0(ExpectedConditions.java:909)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:1)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:238)
+Caused by: java.lang.ClassNotFoundException: com.fasterxml.jackson.databind.JavaType
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
 	... 25 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- java.lang.NoClassDefFoundError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- payWithCODCard -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.noon.iosapp.PayWithCODTest@33723e30]" name="quit" is-config="true" duration-ms="446" started-at="2017-04-06T16:08:01Z" finished-at="2017-04-06T16:08:01Z">
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.noon.iosapp.PayWithCODTest@33723e30]" name="quit" is-config="true" duration-ms="408" started-at="2017-04-11T15:48:34Z" finished-at="2017-04-11T15:48:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
       </class> <!-- com.noon.iosapp.PayWithCODTest -->
     </test> <!-- Checkout through COD Test -->
-    <test name="Pay with credit card  Test" duration-ms="50866" started-at="2017-04-06T12:08:01Z" finished-at="2017-04-06T12:08:52Z">
+    <test name="Pay with credit card  Test" duration-ms="18845" started-at="2017-04-11T11:48:34Z" finished-at="2017-04-11T11:48:53Z">
       <class name="com.noon.iosapp.PayWithCreditCardTest">
-        <test-method status="FAIL" signature="AddCreditCardCheckout()[pri:0, instance:com.noon.iosapp.PayWithCreditCardTest@74a10858]" name="AddCreditCardCheckout" duration-ms="50387" started-at="2017-04-06T16:08:01Z" finished-at="2017-04-06T16:08:52Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method status="FAIL" signature="AddCreditCardCheckout()[pri:0, instance:com.noon.iosapp.PayWithCreditCardTest@74a10858]" name="AddCreditCardCheckout" duration-ms="18421" started-at="2017-04-11T15:48:34Z" finished-at="2017-04-11T15:48:53Z">
+          <exception class="java.lang.NoClassDefFoundError">
             <message>
-              <![CDATA[An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 1.40 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:06:42'
-System info: host: 'kartik.local', ip: '169.254.95.48', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.4', java.version: '1.8.0_111'
-Driver info: io.appium.java_client.ios.IOSDriver
-Capabilities [{app=/Users/kartikbhatt/test-team/ios/POM_Noon/ipa/FastFish.ipa, networkConnectionEnabled=false, appiumVersion=1.6, databaseEnabled=false, deviceName=iPhone 7, platform=MAC, pressKey=true, platformVersion=10.3, webStorageEnabled=false, locationContextEnabled=false, automationName=XCUITest, browserName=, takesScreenshot=true, javascriptEnabled=true, platformName=iOS, udid=B7C3E4D4-C3EA-4DB0-A808-2ECEB73D8425}]
-Session ID: 87b2bc93-4ef0-45b7-9d69-1f20f8c5f797
-*** Element info: {Using=xpath, value=//XCUIElementTypeStaticText[@name='Sign in with']}]]>
+              <![CDATA[com/fasterxml/jackson/databind/JavaType]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 1.40 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:06:42'
-System info: host: 'kartik.local', ip: '169.254.95.48', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.4', java.version: '1.8.0_111'
-Driver info: io.appium.java_client.ios.IOSDriver
-Capabilities [{app=/Users/kartikbhatt/test-team/ios/POM_Noon/ipa/FastFish.ipa, networkConnectionEnabled=false, appiumVersion=1.6, databaseEnabled=false, deviceName=iPhone 7, platform=MAC, pressKey=true, platformVersion=10.3, webStorageEnabled=false, locationContextEnabled=false, automationName=XCUITest, browserName=, takesScreenshot=true, javascriptEnabled=true, platformName=iOS, udid=B7C3E4D4-C3EA-4DB0-A808-2ECEB73D8425}]
-Session ID: 87b2bc93-4ef0-45b7-9d69-1f20f8c5f797
-*** Element info: {Using=xpath, value=//XCUIElementTypeStaticText[@name='Sign in with']}
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:51)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.execute(IOSDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:67)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:145)
-	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.findElementByXPath(IOSDriver.java:1)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:63)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.ios.IOSDriver.findElement(IOSDriver.java:1)
-	at com.noon.iosapp.pages.AddAddressPage.signinTab(AddAddressPage.java:95)
-	at com.noon.iosapp.PayWithCreditCardTest.AddCreditCardCheckout(PayWithCreditCardTest.java:64)
+              <![CDATA[java.lang.NoClassDefFoundError: com/fasterxml/jackson/databind/JavaType
+	at services.ProductService.<init>(ProductService.java:18)
+	at com.noon.iosapp.PayWithCreditCardTest.AddCreditCardCheckout(PayWithCreditCardTest.java:54)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -592,13 +632,19 @@ Session ID: 87b2bc93-4ef0-45b7-9d69-1f20f8c5f797
 	at org.testng.TestNG.run(TestNG.java:1048)
 	at org.testng.TestNG.privateMain(TestNG.java:1355)
 	at org.testng.TestNG.main(TestNG.java:1324)
+Caused by: java.lang.ClassNotFoundException: com.fasterxml.jackson.databind.JavaType
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:331)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 25 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.NoClassDefFoundError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddCreditCardCheckout -->
-        <test-method status="PASS" signature="quit()[pri:0, instance:com.noon.iosapp.PayWithCreditCardTest@74a10858]" name="quit" is-config="true" duration-ms="479" started-at="2017-04-06T16:08:52Z" finished-at="2017-04-06T16:08:52Z">
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.noon.iosapp.PayWithCreditCardTest@74a10858]" name="quit" is-config="true" duration-ms="424" started-at="2017-04-11T15:48:53Z" finished-at="2017-04-11T15:48:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->

@@ -37,39 +37,51 @@ public class MyAccountPage extends BasePage {
 	
 	public void gotoMyAccount() 
 	{
-	
-		test.log(LogStatus.INFO,"Click on my account link");
-		wait = new WebDriverWait(iDriver, 10);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.MY_ACCOUNT)));
-		myAccount.click();
+		try {
+			test.log(LogStatus.INFO, "Click on my account link");
+			wait = new WebDriverWait(iDriver, 10);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.MY_ACCOUNT)));
+			myAccount.click();
+		}catch (Exception e) {
+			test.log(LogStatus.ERROR, "Could not find element");
+		}
 	}
 	
-	public void gotoMyWallet() 
-	{	
-		test.log(LogStatus.INFO, "Click on my wallet link");
-		wait = new WebDriverWait(iDriver, 10);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.MY_WALLET)));
-		myWallet.click();
+	public void gotoMyWallet() {
+		try {
+			test.log(LogStatus.INFO, "Click on my wallet link");
+			wait = new WebDriverWait(iDriver, 10);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.MY_WALLET)));
+			myWallet.click();
+		}catch (Exception e) {
+			test.log(LogStatus.ERROR, "Could not find element");
+		}
 	}
 	
-	public void gotoAddressBook() 
-	{
-		//myWallet.swipe(SwipeElementDirection.LEFT, 5);
-		test.log(LogStatus.INFO, "Swip address book to left");
-		wait = new WebDriverWait(iDriver, 10);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.ADDRESS_BOOK)));
-		addressBook.click();
+	public void gotoAddressBook() {
+		try {
+			//myWallet.swipe(SwipeElementDirection.LEFT, 5);
+			test.log(LogStatus.INFO, "Swip address book to left");
+			wait = new WebDriverWait(iDriver, 10);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.ADDRESS_BOOK)));
+			addressBook.click();
+		}catch (Exception e) {
+			test.log(LogStatus.ERROR, "Could not find element");
+		}
 	}	
 		
-	public void gotoMyProfile() 
-	{
-		//for(int i=0; i<3; i++) {
-		//myWallet.swipe(SwipeElementDirection.LEFT, 5);
-		//}
-		test.log(LogStatus.INFO, "Click on My Profile");
-		wait = new WebDriverWait(iDriver, 10);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.PROFILE)));
-		profile.click();
+	public void gotoMyProfile() {
+		try {
+			//for(int i=0; i<3; i++) {
+			//myWallet.swipe(SwipeElementDirection.LEFT, 5);
+			//}
+			test.log(LogStatus.INFO, "Click on My Profile");
+			wait = new WebDriverWait(iDriver, 10);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.PROFILE)));
+			profile.click();
+		}catch (Exception e) {
+			test.log(LogStatus.ERROR, "Could not find element");
+		}
 	}
 
 }

@@ -11,7 +11,7 @@ import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
 public class ShopByElectronicTest extends BaseTest {
 	
-String testName="ShopByElectronicTest";
+/*String testName="ShopByElectronicTest";
 	
 	@Test
 	public void shopByElectronic() throws InterruptedException {
@@ -22,6 +22,5 @@ String testName="ShopByElectronicTest";
 		ShopByElectronicPage shopByElectronicPage = new ShopByElectronicPage(iDriver, test);
 		PageFactory.initElements(new AppiumFieldDecorator(iDriver),shopByElectronicPage);
 		shopByElectronicPage.findElectronicCategory();
-		test.log(LogStatus.PASS, "Test Passed");
-	}
+	}*/
 }

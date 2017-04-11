@@ -27,10 +27,14 @@ WebDriverWait wait;
 	public IOSElement appMenu;
 	
 	public void gotoMenu() {
-		test.log(LogStatus.INFO, "Clik on menu button");
-		wait = new WebDriverWait(iDriver, 10);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.APPS_MENU)));
-		appMenu.click();
+		try {
+			test.log(LogStatus.INFO, "Clik on menu button");
+			wait = new WebDriverWait(iDriver, 10);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.APPS_MENU)));
+			appMenu.click();
+		}catch (Exception e) {
+			test.log(LogStatus.ERROR, "Could not find element");
+		}
 	}
 
 	public void gotoCart() {

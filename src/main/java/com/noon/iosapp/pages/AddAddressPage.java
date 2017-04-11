@@ -93,137 +93,174 @@ public class AddAddressPage extends BasePage {
 	public IOSElement itemRemove;
 	
 	public void addNewAddressCheckout() {
-		test.log(LogStatus.INFO, "Add new address from checkout");
-		wait = new WebDriverWait(iDriver, 10); 
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.SECURE_CHECKOUT)));
-		secureCheckout.click();
+		try {
+			test.log(LogStatus.INFO, "Add new address from checkout");
+			wait = new WebDriverWait(iDriver, 10);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.SECURE_CHECKOUT)));
+			secureCheckout.click();
+		}catch (Exception e) {
+			test.log(LogStatus.FAIL, "Could not find element");
+		}
 	}
 	
 	public void signinTab() {
-		test.log(LogStatus.INFO, "Click on signin tab");
-		if(!iDriver.findElement(By.xpath(IConstants.SIGNIN_WITH)).isDisplayed()) {
-			loginTab.click();
+		try
+		{
+			test.log(LogStatus.INFO, "Click on signin tab");
+			if(!iDriver.findElement(By.xpath(IConstants.SIGNIN_WITH)).isDisplayed()) {
+				loginTab.click();
+			}
+		}catch (Exception e) {
+				test.log(LogStatus.FAIL, "Could not find element");
+
 		} 
 	}
 	
 	public void addChnageAddress() {
-		test.log(LogStatus.INFO, "Click on add or change address");
-		wait = new WebDriverWait(iDriver, 10); 
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.ADD_CHANGE_ADDRESS)));
-		addChangeAddress.click();
+		try {
+			test.log(LogStatus.INFO, "Click on add or change address");
+			wait = new WebDriverWait(iDriver, 10);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.ADD_CHANGE_ADDRESS)));
+			addChangeAddress.click();
+		}catch (Exception e) {
+			test.log(LogStatus.FAIL, "Could not find element");
+		}
 	}
 
 	public void weDeliverText() {
-		test.log(LogStatus.INFO, "Click on add new address");
-		wait = new WebDriverWait(iDriver, 10);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.ADD_NEW_ADDRESS_TEXT)));
-		weDeliverText.click();
+		try {
+			test.log(LogStatus.INFO, "Click on add new address");
+			wait = new WebDriverWait(iDriver, 10);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.ADD_NEW_ADDRESS_TEXT)));
+			weDeliverText.click();
+		}catch (Exception e) {
+			test.log(LogStatus.FAIL, "Could not find element");
+		}
 	}
 	
 	public void addNewAddressCheckoutConformation() {
-		wait = new WebDriverWait(iDriver, 10); 
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.BACK_BUTTON)));
-		backButton.click();
-		wait = new WebDriverWait(iDriver, 10); 
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.DELIVERY_ADDRESS_CONFORM)));
-		wait = new WebDriverWait(iDriver, 10);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.BACK_BUTTON)));
-		backButton.click();
-		wait = new WebDriverWait(iDriver, 10);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.CROSS_BUTTON)));
-		crossButton.click();
+		try {
+			wait = new WebDriverWait(iDriver, 10);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.BACK_BUTTON)));
+			backButton.click();
+			wait = new WebDriverWait(iDriver, 10);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.DELIVERY_ADDRESS_CONFORM)));
+			wait = new WebDriverWait(iDriver, 10);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.BACK_BUTTON)));
+			backButton.click();
+			wait = new WebDriverWait(iDriver, 10);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.CROSS_BUTTON)));
+			crossButton.click();
+		}catch (Exception e) {
+			test.log(LogStatus.FAIL, "Could not find element");
+		}
 	}
 
 	public void gotoCart() {
-		test.log(LogStatus.INFO, "Click on cart button");
-		wait = new WebDriverWait(iDriver, 10);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.CART_ITEM)));
-		cartItem.click();
-		wait = new WebDriverWait(iDriver, 10);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.ITEM_REMOVE)));
-		itemRemove.click();
-		wait = new WebDriverWait(iDriver, 10);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.CROSS_BUTTON)));
-		crossButton.click();
+		try {
+			test.log(LogStatus.INFO, "Click on cart button");
+			wait = new WebDriverWait(iDriver, 10);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.CART_ITEM)));
+			cartItem.click();
+			wait = new WebDriverWait(iDriver, 10);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.ITEM_REMOVE)));
+			itemRemove.click();
+			wait = new WebDriverWait(iDriver, 10);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.CROSS_BUTTON)));
+			crossButton.click();
+		}catch (Exception e) {
+			test.log(LogStatus.FAIL, "Could not find element");
+		}
 	}
 	
-	public void addNewAddress(String deliveryAddress) 
-	{
-		test.log(LogStatus.INFO, "Add new address from address book");
-		
-		test.log(LogStatus.INFO, "Click on add new address");
-		wait = new WebDriverWait(iDriver, 10); 
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.ADDRESSBOOK_ADDADDRESS)));
-		addressbookAddAddress.click();
-		
-		test.log(LogStatus.INFO, "Adding deliver address");
-		wait = new WebDriverWait(iDriver, 10); 
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.DELIVERY_ADDRESS)));
-		TouchAction action2 = new TouchAction(iDriver);
-		action2.tap(deliverAddress).perform();
-		
-		wait = new WebDriverWait(iDriver, 10); 
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.DELIVERY_ADDRESS_EDIT)));
-		deliverAddressEdit.sendKeys(deliveryAddress);
-		
-		wait = new WebDriverWait(iDriver, 10); 
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.DELIVERY_ADDRESS_CELL)));
-		deliverAddressCell.click();
-		
-		wait = new WebDriverWait(iDriver, 10);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.ADDRESS_DONE_BUTTON)));
-		addressDoneButton.click();
+	public void addNewAddress(String deliveryAddress) {
+		try {
+			test.log(LogStatus.INFO, "Add new address from address book");
+			test.log(LogStatus.INFO, "Click on add new address");
+			wait = new WebDriverWait(iDriver, 10);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.ADDRESSBOOK_ADDADDRESS)));
+			addressbookAddAddress.click();
+
+			test.log(LogStatus.INFO, "Adding deliver address");
+			wait = new WebDriverWait(iDriver, 10);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.DELIVERY_ADDRESS)));
+			TouchAction action2 = new TouchAction(iDriver);
+			action2.tap(deliverAddress).perform();
+
+			wait = new WebDriverWait(iDriver, 10);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.DELIVERY_ADDRESS_EDIT)));
+			deliverAddressEdit.sendKeys(deliveryAddress);
+
+			wait = new WebDriverWait(iDriver, 10);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.DELIVERY_ADDRESS_CELL)));
+			deliverAddressCell.click();
+
+			wait = new WebDriverWait(iDriver, 10);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.ADDRESS_DONE_BUTTON)));
+			addressDoneButton.click();
+		}catch (Exception e) {
+			test.log(LogStatus.FAIL, "Could not find element");
+		}
 	}
 
-	public void deliveryAddressCredit(String phoneNumber)
-	{
-		wait = new WebDriverWait(iDriver, 10);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.ALMOST_DONE_TEXT1)));
+	public void deliveryAddressCredit(String phoneNumber) {
+		try {
+			wait = new WebDriverWait(iDriver, 10);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.ALMOST_DONE_TEXT1)));
 
-		JavascriptExecutor js = (JavascriptExecutor) iDriver;
-		HashMap<String, String> scrollObject = new HashMap<String, String>();
-		scrollObject.put("direction", "down");
-		js.executeScript("mobile: scroll", scrollObject);
+			JavascriptExecutor js = (JavascriptExecutor) iDriver;
+			HashMap<String, String> scrollObject = new HashMap<String, String>();
+			scrollObject.put("direction", "down");
+			js.executeScript("mobile: scroll", scrollObject);
 
-		wait = new WebDriverWait(iDriver, 10);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.DELIVERY_ADDRESS_PHONE_EDIT)));
-		deliveryAddressPhoneEdit.sendKeys(phoneNumber);
-		wait = new WebDriverWait(iDriver, 10);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.DELIVERY_ADDRESS_SAVE)));
-		deliverAddressSave.click();
+			wait = new WebDriverWait(iDriver, 10);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.DELIVERY_ADDRESS_PHONE_EDIT)));
+			deliveryAddressPhoneEdit.sendKeys(phoneNumber);
+			wait = new WebDriverWait(iDriver, 10);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.DELIVERY_ADDRESS_SAVE)));
+			deliverAddressSave.click();
+		}catch (Exception e) {
+			test.log(LogStatus.FAIL, "Could not find element");
+		}
 	}
 	
-	public void deliveryAddressCOD(String name, String phoneNumber)
-	{
-		wait = new WebDriverWait(iDriver, 10); 
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.ALMOST_DONE_TEXT1)));
-		
-		JavascriptExecutor js = (JavascriptExecutor) iDriver;
-		HashMap<String, String> scrollObject = new HashMap<String, String>();
-		scrollObject.put("direction", "down");
-		js.executeScript("mobile: scroll", scrollObject);
-		wait = new WebDriverWait(iDriver, 10);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.DELIVERY_ADDRESS_NAME_CLICK)));
-		deliveryAddressNameClick.click();
-		//TouchAction action = new TouchAction(iDriver);
-		//action.tap(deliveryAddressNameClick).perform();
-		wait = new WebDriverWait(iDriver, 10);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.CLEAR_TEXT)));
-		clearText.click();
-		wait = new WebDriverWait(iDriver, 10);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.DELIVERY_ADDRESS_NAME_EDIT)));
-		deliveryAddressNameEdit.sendKeys(name);
-		wait = new WebDriverWait(iDriver, 10);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.DELIVERY_ADDRESS_PHONE_EDIT)));
-		deliveryAddressPhoneEdit.sendKeys(phoneNumber);
-		wait = new WebDriverWait(iDriver, 10);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.DELIVERY_ADDRESS_SAVE)));
-		deliverAddressSave.click();
+	public void deliveryAddressCOD(String name, String phoneNumber) {
+		try {
+			wait = new WebDriverWait(iDriver, 10);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.ALMOST_DONE_TEXT1)));
+
+			JavascriptExecutor js = (JavascriptExecutor) iDriver;
+			HashMap<String, String> scrollObject = new HashMap<String, String>();
+			scrollObject.put("direction", "down");
+			js.executeScript("mobile: scroll", scrollObject);
+			wait = new WebDriverWait(iDriver, 10);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.DELIVERY_ADDRESS_NAME_CLICK)));
+			deliveryAddressNameClick.click();
+			//TouchAction action = new TouchAction(iDriver);
+			//action.tap(deliveryAddressNameClick).perform();
+			wait = new WebDriverWait(iDriver, 10);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.CLEAR_TEXT)));
+			clearText.click();
+			wait = new WebDriverWait(iDriver, 10);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.DELIVERY_ADDRESS_NAME_EDIT)));
+			deliveryAddressNameEdit.sendKeys(name);
+			wait = new WebDriverWait(iDriver, 10);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.DELIVERY_ADDRESS_PHONE_EDIT)));
+			deliveryAddressPhoneEdit.sendKeys(phoneNumber);
+			wait = new WebDriverWait(iDriver, 10);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.DELIVERY_ADDRESS_SAVE)));
+			deliverAddressSave.click();
+		}catch (Exception e) {
+			test.log(LogStatus.FAIL, "Could not find element");
+		}
 	}
 	
 	public void addressConformation() {
-
-		wait = new WebDriverWait(iDriver, 10); 
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.PROFILE_ADDRESS_CONFORM)));
+		try {
+			wait = new WebDriverWait(iDriver, 10);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.PROFILE_ADDRESS_CONFORM)));
+		}catch (Exception e) {
+			test.log(LogStatus.FAIL, "Could not find element");
+		}
 	}
 }

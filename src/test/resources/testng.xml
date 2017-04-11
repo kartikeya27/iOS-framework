@@ -1,6 +1,6 @@
 <suite name="Noon">
 
-	<!-- <test name="Splash screen Test" allow-return-values="true">
+	<test name="Splash screen Test" allow-return-values="true">
 		 <classes>
 			 <class name="com.noon.iosapp.SplashScreenTest" />
 		 </classes>
@@ -63,7 +63,7 @@
 		   <classes>
 			   <class name="com.noon.iosapp.EditCartTest" />
 		   </classes>
-	   </test>-->
+	   </test>
 
 		<test name="Add new address from Address Book Test" allow-return-values="true">
 			<classes>

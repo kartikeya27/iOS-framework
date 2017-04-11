@@ -2,82 +2,68 @@
 <!DOCTYPE project [
 ]>
 
-<project name="POM Noon" default="usage" basedir=".">  
+<project name="qa-automation-ios" default="usage" basedir=".">
 
 <!-- ========== Initialize Properties =================================== -->
     <property environment="env"/>
-    
-    <property name="ws.home" value="${basedir}"/>
-	<property name="ws.jars" value="${user.home}/jars"/>
-    <property name="test.dest" value="${ws.home}/build"/>
-    <property name="test.src" value="${ws.home}/src"/>
-	<property name="ng.result" value="test-output"/>
+    <property name="project.home" value="${basedir}"/>
+	<property name="project.jars" value="/Users/kartikbhatt/jars"/>
+    <property name="report.dest" value="${project.home}/build"/>
+    <property name="report.src" value="${project.home}/src"/>
+	<property name="report.result" value="test-output"/>
     
     <!--target name="start-selenium-server">
         <java jar="${ws.home}/lib/selenium-server.jar"/>
     </target-->
 
-    <target name="setClassPath" unless="test.classpath">
-        <path id="classpath_jars">
-            <fileset dir="${ws.jars}" includes="*.jar"/>
+    <target name="setPath" unless="suite.classpath">
+        <path id="jar_path">
+            <fileset dir="${project.jars}" includes="*.jar"/>
         </path>
         <pathconvert pathsep=":" 
-            property="test.classpath" 
-            refid="classpath_jars"/>
+            property="suite.classpath"
+            refid="jar_path"/>
     </target>
     
-    <path id="testcase.path">
-
-
-	    <pathelement location="${test.dest}"/>
-
-	    <fileset dir="${ws.jars}">
-	      <include name="*.jar"/>
-	    </fileset>
-
-	  </path>
-
-    <target name="init" depends="setClassPath">
+    <target name="init" depends="setPath">
         <tstamp>
-            <format property="start.time" pattern="MM/dd/yyyy hh:mm aa" />
+            <format property="Init.time" pattern="MM/dd/yyyy hh:mm aa" />
         </tstamp>
         <condition property="ANT" 
-            value="${env.ANT_HOME}/bin/ant.bat" 
-            else="${env.ANT_HOME}/bin/ant">
+            value="/usr/local/apache-ant-1.9.7/bin/ant.bat"
+            else="/usr/local/apache-ant-1.9.7/bin/ant">
                     <os family="mac" />
         </condition>
-        <taskdef name="testng" classpath="${test.classpath}"
+        <taskdef name="testng" classpath="${suite.classpath}"
                classname="org.testng.TestNGAntTask" />
-    
     </target>
   
-    <!-- all -->
-    <target name="all">
-    </target>
-
     <!-- clean -->
     <target name="clean">
-        <delete dir="${test.dest}"/>
+        <delete dir="${report.dest}"/>
     </target>
 
     <!-- compile -->
     <target name="compile" depends="init, clean" > 
 		<delete includeemptydirs="true" quiet="true">
-            <fileset dir="${test.dest}" includes="**/*"/>
+            <fileset dir="${report.dest}" includes="**/*"/>
 		</delete>
         <echo message="making directory..."/>
-		<mkdir dir="${test.dest}"/>
-        <echo message="classpath------: ${test.classpath}"/>
+		<mkdir dir="${report.dest}"/>
+        <echo message="Suite class path is ------: ${suite.classpath}"/>
         <echo message="compiling..."/>
         
         <javac 
             debug="true" 
-            destdir="${test.dest}" 
-            srcdir="${test.src}" 
-            classpath="${test.classpath}"
-            includeantruntime="false"
+            destdir="${report.dest}"
+            srcdir="${report.src}"
+            target="1.8"
+            classpath="${suite.classpath}"
         >
         </javac>
+        <copy todir="${report.dest}">
+            <fileset dir="${report.src}" excludes="**/*.java"/>
+        </copy>
       </target>
 
     <!-- build -->
@@ -86,8 +72,8 @@
 
     <!-- run -->
     <target name="run" depends="compile">
-        <testng classpath="${test.classpath}:${test.dest}" suitename="Noon">	
-            <xmlfileset dir="${ws.home}" includes="src/test/resources/testng.xml"/>
+        <testng classpath="${suite.classpath}:${report.dest}" suitename="Noon">
+            <xmlfileset dir="${project.home}" includes="src/test/resources/testng.xml"/>
         </testng>
         <!--
         <testng classpath="${test.classpath}:${test.dest}" groups="fast">
@@ -103,20 +89,20 @@
     </target>
 
 	<path id="test.c">
-	        <fileset dir="${ws.jars}" includes="*.jar"/>
+	        <fileset dir="${project.jars}" includes="*.jar"/>
 	</path>
 	
 	  <target name="makexsltreports">
-	        <mkdir dir="${ws.home}/XSLT_Reports/output"/>
+	        <mkdir dir="${project.home}/XSLT_Reports/output"/>
 
-	        <xslt in="${ng.result}/testng-results.xml" style="src/test/resources/testng-results.xsl"
-	              out="${ws.home}/XSLT_Reports/output/index.html" classpathref="test.c" processor="SaxonLiaison">
-	            <param name="testNgXslt.outputDir" expression="${ws.home}/XSLT_Reports/output/"/>
+	        <xslt in="${report.result}/testng-results.xml" style="src/test/resources/testng-results.xsl"
+	              out="${project.home}/XSLT_Reports/output/index.html" classpathref="test.c" processor="SaxonLiaison">
+	            <param name="testNgXslt.outputDir" expression="${project.home}/XSLT_Reports/output/"/>
 	            <param name="testNgXslt.showRuntimeTotals" expression="true"/>
 	        </xslt>
 	    </target>
 
  	<target name="report_email" >
-			       <java classname="com.noon.iosapp.mail.SendMail"  classpathref="testcase.path" />
+			       <java classname="com.noon.iosapp.mail.SendMail"  classpathref="jar_path" />
 	</target>  
 </project>

@@ -9,7 +9,7 @@ import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
 public class ShopBySportsTest extends BaseTest {
 	
-String testName="ShopBySportsTest";
+/*String testName="ShopBySportsTest";
 	
 	@Test
 	public void shopBySportsCategory() throws InterruptedException {
@@ -20,7 +20,6 @@ String testName="ShopBySportsTest";
 		ShopBySportsPage shopBySportsPage  = new ShopBySportsPage(iDriver, test);
 		PageFactory.initElements(new AppiumFieldDecorator(iDriver),shopBySportsPage);
 		shopBySportsPage.findSportsCategory();
-		test.log(LogStatus.PASS, "Test Passed");
-	}
+	}*/
 
 }

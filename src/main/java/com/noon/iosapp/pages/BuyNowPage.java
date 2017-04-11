@@ -34,18 +34,22 @@ public class BuyNowPage extends BasePage {
 	WebDriverWait wait;
 	
 	public void buyNowProduct() {
-		test.log(LogStatus.INFO, "Click on product details");
-		wait = new WebDriverWait(iDriver, 10);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.SEARCH_ITEM_LABEL)));
-		searchItemLable.click();
-		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstant
-		//WebDriverWait wait = new WebDriverWait(iDriver, 10);
-		//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.SEARCH_TEXT_SELECT)));
-		//searchTextSelect.click();
-		test.log(LogStatus.INFO, "Buy product using buy now button");
-		wait = new WebDriverWait(iDriver, 10);
-		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.BUYNOW_BUTTON)));
-		buyNowButton.click();
+		try {
+			test.log(LogStatus.INFO, "Click on product details");
+			wait = new WebDriverWait(iDriver, 10);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.SEARCH_ITEM_LABEL)));
+			searchItemLable.click();
+			//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstant
+			//WebDriverWait wait = new WebDriverWait(iDriver, 10);
+			//wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.SEARCH_TEXT_SELECT)));
+			//searchTextSelect.click();
+			test.log(LogStatus.INFO, "Buy product using buy now button");
+			wait = new WebDriverWait(iDriver, 10);
+			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(IConstants.BUYNOW_BUTTON)));
+			buyNowButton.click();
+		}catch (Exception e) {
+			test.log(LogStatus.FAIL, "Could not find element");
+		}
 	}
 
 }
