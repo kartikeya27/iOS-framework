@@ -100,5 +100,12 @@
 				<class name="com.noon.iosapp.PayWithCreditCardTest" />
 			</classes>
 		</test>
+
+		<test name="Send email Test" allow-return-values="true">
+			<classes>
+				<class name="com.noon.iosapp.PayWithCreditCardTest" />
+			</classes>
+		</test>
+
 </suite>
 

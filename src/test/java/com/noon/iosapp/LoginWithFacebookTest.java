@@ -11,7 +11,7 @@ import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
 public class LoginWithFacebookTest extends BaseTest {
 	
-String testName="LoginWithFacebookTest";
+/*String testName="LoginWithFacebookTest";
 	
 	@Test
 	public void facebookLogin() throws InterruptedException {
@@ -24,5 +24,5 @@ String testName="LoginWithFacebookTest";
 			String facebookUserEmail = "noontesting1@gmail.com";
 			String facebookUserPassword = "P@ssword1";
 			socialMediaPage.facebookLogin(facebookUserEmail, facebookUserPassword);
-	}
+	}*/
 }

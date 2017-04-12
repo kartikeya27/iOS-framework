@@ -9,7 +9,7 @@ import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
 public class LogoutTest extends BaseTest {
 	
-String testName="LogoutTest";
+/*String testName="LogoutTest";
 	
 	@Test
 	public void logoutTest() throws InterruptedException {
@@ -22,6 +22,6 @@ String testName="LogoutTest";
 		logoutPage.logoutApp();
 		test.log(LogStatus.INFO, "Logout from application");
 		test.log(LogStatus.PASS, "Test Passed");
-	}
+	}*/
 
 }
