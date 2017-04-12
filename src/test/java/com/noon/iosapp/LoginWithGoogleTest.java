@@ -11,7 +11,7 @@ import io.appium.java_client.pagefactory.AppiumFieldDecorator;
 
 public class LoginWithGoogleTest extends BaseTest {
 	
-String testName="LoginWithGoogleTest";
+/*String testName="LoginWithGoogleTest";
 	
 	@Test
 	public void googleLogin() throws InterruptedException {
@@ -24,5 +24,5 @@ String testName="LoginWithGoogleTest";
 			String googleUserEmail = "noontesting2@gmail.com";
 			String googleUserPassword = "1200@Villa";
 			socialMediaPage.googleLogin(googleUserEmail, googleUserPassword);
-	}
+	}*/
 }
