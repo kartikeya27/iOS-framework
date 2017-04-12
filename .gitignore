@@ -1,5 +1,17 @@
-*.class
-*.idea
-*.metadata
-*.DS_Store
+
+
+.metadata
+log/
+target/
+test-output/
+.idea/
+RemoteSystemsTempFiles/
+XSLT_Reports/
+*.iml
+*.iws
+.classpath
+.project
+.settings/
+.DS_Store
+debug.log
 
